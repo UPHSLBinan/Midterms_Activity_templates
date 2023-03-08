@@ -1,0 +1,38 @@
+@charset "utf-8";
+
+div.gallery {
+		margin: 2px;
+		border: 1px solid #ccc;
+  		float: left;
+  		width: 360px;
+	}
+
+	div.gallery:hover {
+  		border: 2px solid #FF0004;
+	}
+
+	div.gallery img {
+  		width: 360px;
+	}
+
+	div.desc {
+  		padding: auto;
+  		text-align: center;
+		width: 95%;
+		height: 95%;
+		margin: auto;
+		font-size: 95%;
+	}
+	img 
+	{float: left;
+	height: 120px;
+	object-fit: fill; 
+	}
+	body { text-align: center;
+		background-image: url("Pictures/cover.jpg");
+		background-attachment: fixed;
+		background-repeat: repeat;
+		font-family:Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+		color: antiquewhite; 
+	}
+
