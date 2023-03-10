@@ -5,16 +5,87 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Material Icons -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous"/>
     <!-- CSS File -->
-    <link rel="stylesheet" href="styles/index.css" />
+    <link rel="stylesheet" href="styles.css" />
     <title>Youtube Monina Viardo</title>
   </head>
+
   <body>
-      <header class="header">.</header>
+      <header class="header"> 
+        <div class="logo left">
+        <i id="menu" class="material-icons">menu</i>
+        <i class="fab fa-youtube"></i>
+      </div>
+      
+      <div class="search center">
+        <form action="">
+          <input type="text" placeholder="Search" />
+          <button><i class="material-icons">search</i></button>
+        </form>
+        <i class="material-icons mic">mic</i>
+      </div>
+      
+      <div class="icons right">
+        <i class="material-icons">videocam</i>
+        <i class="material-icons">apps</i>
+        <i class="material-icons">notifications</i>
+        <i class="material-icons display-this">account_circle</i>
+      </div>
+    </header>
+
       <main>
-          <div class="side-bar">.</div>
+          <div class="side-bar">
+            <div class="nav">
+                <a class="nav-link active">
+                  <i class="material-icons">home</i>
+                  <span>Home</span>
+                </a>
+
+                <a class="nav-link">
+                    <i class="material-icons">local_fire_department</i>
+                    <span>Trending</span>
+                 </a>
+
+                 <a class="nav-link">
+                    <i class="material-icons">subscriptions</i>
+                    <span>Subscriptions</span>
+                 </a>
+            </div>
+        
+            <div class="nav">
+                <hr>
+                <a class="nav-link">
+                    <i class="material-icons">library_add_check</i>
+                    <span>Library</span>
+                </a>
+
+                <a class="nav-link">
+                    <i class="material-icons">history</i>
+                    <span>History</span>
+                </a>
+
+                <a class="nav-link">
+                    <i class="material-icons">play_arrow</i>
+                    <span>Your Videos</span>
+                </a>
+
+                <a class="nav-link">
+                    <i class="material-icons">watch_later</i>
+                    <span>Watch Later</span>
+                </a>
+
+                <a class="nav-link">
+                    <i class="material-icons">thumb_up</i>
+                    <span>Liked Videos</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
           <div class="content">.</div>
-      </main>
+      
+        </main>
   <!-- Main Body Ends -->
 </body>
 </html>
