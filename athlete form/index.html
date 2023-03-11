@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Athlete Registration Form</title>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+</head>
+ <style>
+		body {
+			background: rgb(52,107,187);
+            background: linear-gradient(90deg, rgba(52,107,187,1) 20%, 
+				rgba(3,25,147,1) 50%, rgba(52,107,187,1) 80%);
+			color: white;
+		}
+	 .validate{
+		 color:white;
+	 }
+</style>
+
+<script>
+	document.addEventListener('DOMContentLoaded', function() {
+		var elems = document.querySelectorAll('select');
+		var instances = M.FormSelect.init(elems);
+	});
+</script>
+
+<body>
+	<div class="container">
+		<h1 class="center-align">Athlete Registration Form</h1>
+		<form>
+			<div class="row">
+				<div class="input-field col s12 m6">
+					<input id="name" type="text" class="validate">
+					<label for="name">Name</label>
+				</div>
+				<div class="input-field col s12 m6">
+					<input id="age" type="number" class="validate">
+					<label for="age">Age</label>
+				</div>
+			</div>
+			<div class="row">
+				<div class="input-field col s12 m6">
+					<select id="gender" class="validate">
+						<option value="" disabled selected>Choose your gender</option>
+						<option value="male">Male</option>
+						<option value="female">Female</option>
+					</select>
+					<label class="validate" for="gender">Gender</label>
+				</div>
+				<div class="input-field col s12 m6">
+					<input id="sport" type="text" class="validate">
+					<label for="sport">Sport</label>
+				</div>
+			</div>
+			<div class="row">
+				<div class="input-field col s12 m6">
+					<input id="email" type="email" class="validate">
+					<label for="email">Email</label>
+				</div>
+				<div class="input-field col s12 m6">
+					<input id="phone" type="tel" class="validate">
+					<label for="phone">Phone</label>
+				</div>
+			</div>
+			<div class="row">
+				<div class="input-field col s12">
+					<textarea id="address" class="validate"></textarea>
+					<label for="address">Address</label>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col s12">
+					<button class="btn waves-effect waves-light" type="submit" name="action">Submit
+						<i class="material-icons right">send</i>
+					</button>
+				</div>
+			</div>
+		</form>
+	</div>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+</html>

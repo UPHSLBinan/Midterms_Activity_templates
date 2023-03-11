@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Website</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#">English</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2></h2>
+<p></p>
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 6</div>
+  <img src="img2/1.jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 6</div>
+  <img src="img2/2.jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="img2/3.jpg" style="width:100%">
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+    <section class="portfolio">
+      <h2>POPULAR GAMES:</h2>
+      <ul>
+        <li><a href="#"><img src="img/1.jpg" alt="1"></a><p>MONSTER HUNTER RISE: SUNBREAK</p></li>
+		  
+        <li><a href="#"><img src="img/2.jpg" alt="2"></a><p>MONSTER HUNTER RISE</p></li>
+		
+		<li><a href="#"><img src="img/3.jpg" alt="3"></a><p>MONSTER HUNTER STORIES 2: WINGS OF RUIN</p></li>
+		  
+		<li><a href="#"><img src="img/4.jpg" alt="4"></a><p>MONSTER HUNTER WORLD: ICEBORNE</p></li>
+		 
+		<li><a href="#"><img src="img/5.jpg" alt="5"></a><p>MONSTER HUNTER: WORLD</p></li>
+		  
+		<li><a href="#"><img src="img/6.jpg" alt="6"></a><p>MONSTER HUNTER GENERATIONS ULTIMATE</p></li>
+		  
+      </ul>
+    </section>
+
+    <section class="about">
+      <h2>ABOUT GAME</h2>
+      <p>Monster Hunter is a popular action role-playing video game franchise developed and published by Capcom. The game revolves around the player character, a hunter, who embarks on quests to hunt and kill various monsters in a fantasy world. Players are equipped with a variety of weapons and armor that can be crafted from materials obtained by hunting monsters. Each monster has its own unique behaviors, abilities, and weaknesses, making the gameplay challenging and rewarding. As players progress through the game, they can unlock new weapons, armor, and quests, and can team up with other players to take down more powerful monsters. The game also features a crafting system, allowing players to create and upgrade weapons and armor, and a cooking system, which provides buffs to the player's abilities. Monster Hunter is known for its deep gameplay mechanics, intricate monster designs, and cooperative multiplayer mode, making it a popular game for both solo and group play.</p>
+    </section>
+
+    <section class="contact">
+      <h2>CONTACT US</h2>
+      <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+  </main>
+	
+<script>
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); 
+}
+</script>
+</body>
+</html>
