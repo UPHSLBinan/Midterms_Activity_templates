@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Social Media Profile Template</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+  <!-- Material Icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <style>
+  /* Custom CSS for social media profile website */
+
+/* Navbar */
+.navbar {
+  background-color: #212529;
+}
+
+.navbar-brand,
+.navbar-nav .nav-link {
+  color: #ffffff;
+  font-size: 1.2rem;
+}
+
+.navbar-brand:hover,
+.navbar-nav .nav-link:hover {
+  color: #ffffff;
+}
+
+/* Jumbotron */
+.jumbotron {
+  background-color: #343a40;
+  color: #ffffff;
+  padding: 100px 0;
+}
+
+.jumbotron h1 {
+  font-size: 4rem;
+}
+
+.jumbotron p {
+  font-size: 1.5rem;
+}
+
+/* Parallax */
+.parallax {
+  background-image: url("https://via.placeholder.com/1200x800");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #ffffff;
+  padding: 100px 0;
+}
+
+/* Cards */
+.card {
+  margin-bottom: 20px;
+}
+
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.card-text {
+  font-size: 1rem;
+}
+
+/* Material Design Buttons */
+.btn-primary,
+.btn-danger,
+.btn-success {
+  font-size: 1.2rem;
+}
+
+.btn-lg {
+  padding: 10px 20px;
+  margin-top: 20px;
+}
+
+/* Footer */
+footer {
+  background-color: #212529;
+  color: #ffffff;
+  padding: 20px 0;
+}
+
+footer a {
+  color: #ffffff;
+}
+
+footer a:hover {
+  color: #f8f9fa;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .jumbotron {
+    padding: 50px 0;
+  }
+
+  .jumbotron h1 {
+    font-size: 3rem;
+  }
+
+  .jumbotron p {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .jumbotron {
+    padding: 25px 0;
+  }
+
+  .jumbotron h1 {
+    font-size: 2rem;
+  }
+
+  .jumbotron p {
+    font-size: 1rem;
+  }
+
+  .btn-lg {
+    padding: 5px 10px;
+  }
+}
+.card-text{
+font-color: ;
+
+}
+
+div.card-text p {
+  color: ;
+}
+div.card-body p {
+  color: ;
+}
+div.card-title p {
+  color: ;
+}
+
+
+.card-title{
+color: ;
+font-size: ;
+}
+.container{
+
+}
+
+.card{
+font-color: white !important;
+background-color: #eae0ffff;
+box-shadow: 2px 0px 0px 3px rgba(0, 0, 0, 0.1);
+border: 1px solid black;
+
+}
+
+body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        background-image: url('websitebg.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+      }
+.card-header{
+background-color: #c2efffff;
+border-bottom: 1px solid black;
+}
+.nav-link{
+color: black !important;
+}
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 5%;
+  background-color: #c2eefdff; 
+  border: 1px solid black;
+  box-shadow: 2px 0px 0px 3px rgba(0, 0, 0, 0.1);
+  padding-top: 6%;
+
+}
+
+  </style>
+</head>
+<body style="">
+<img src="chats.png"  style="position: fixed; float: right; margin-top: 10%; margin-left: 95%; z-index: 9999; width: 4.5%;">
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" style="background-image: url('navbg.png');    background-color: #c2eefdff;  border: 1px solid black; box-shadow: 2px 0px 0px 3px rgba(0, 0, 0, 0.1);">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+          <img src="logo.png" height="45px" alt="Logo" class="ml-3" style="margin-right:2%;">
+		  
+<form class="form-inline my-2 my-lg-0" style="position: relative;">
+  <input type="text" class="form-control" placeholder="Search" style="border-radius: 30px; border: 1px solid black; padding-left: 35px;">
+  <img src="search.png" height="50px" style="position: absolute; top: 50%; transform: translateY(-50%); left: -20px;">
+</form>
+
+
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="#"><img src="home.png" height="50px" style="margin-top: 0%;"></a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="#"><img src="user.png" height="50px" style="margin-top: 0%;"></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#"><img src="friends.png" height="50px" style="margin-top: 0%;"></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#"><img src="comment.png" height="50px" style="margin-top: 0%;"></a>
+      </li>
+ 
+      <div class="d-flex align-items-center ml-3">
+        <img src="profile.png" width="50px" class="rounded-circle mr-2" alt="Profile Picture" style="box-shadow: 2px 0px 0px 3px rgba(0, 0, 0, 0.1); border: 1px solid black;">
+        <h6>Arman Cedric  </h6>
+<img src="dropdown.png" width="20px" style="margin-top: -3px; margin-left: 0%;">
+      </div>
+    </ul>
+  </div>
+</nav>
+
+<nav class="sidebar" style="text-align: center;">
+<img src="home.png" class="rounded-circle mr-2" alt="Profile Picture" style=" width: 70%;  " >
+<br><br>
+<img src="profile.png"  class="rounded-circle mr-2" alt="Profile Picture" style=" width: 70%; box-shadow: 2px 0px 0px 3px rgba(0, 0, 0, 0.1); border: 1px solid black;">
+<hr style="border-bottom: 1px solid black; width: 90%;">
+<img src="friends.png"  class="rounded-circle mr-2" alt="Profile Picture" style=" width: 70%; ">
+<br><br>
+<img src="event.png"  class="rounded-circle mr-2" alt="Profile Picture" style=" width: 70%; ">
+<br><br>
+<img src="marketplace.png"  class="rounded-circle mr-2" alt="Profile Picture" style=" width: 70%; ">
+<br><br>
+<img src="watch.png"  class="rounded-circle mr-2" alt="Profile Picture" style=" width: 70%; ">
+<br><br>
+<img src="clock.png"  class="rounded-circle mr-2" alt="Profile Picture" style=" width: 70%; ">
+<br><br>
+<img src="moree.png"  class="rounded-circle mr-2" alt="Profile Picture" style=" width: 70%; ">
+</nav>
+
+
+  <!-- Parallax Section -->
+  <div class="container" style="margin-top: 5%;">
+<section class="parallax" style="background-image: url('coverphoto.png'); position: relative; border: 1px solid black; width: 100%;  display: flex;
+  justify-content: center; /* horizontally center the container */
+  align-items: center; /* vertically center the container */
+  margin: 0 auto; /* center the container horizontally */
+ ">
+<br>
+<br>
+  
+
+  <div class="container" style="bottom: 0px; position: absolute; background-color: #fbfe95ff; width:  70%; border: 1px solid black; border-radius: 30px; box-shadow: 2px 0px 0px 3px rgba(0, 0, 0, 0.1); margin-top: 10%; margin-bottom: 1%;  " >
+   <img src="profile.png" alt="Profile Picture" class="" style="z-index: 2; border-radius: 100%; box-shadow: 2px 0px 0px 3px rgba(0, 0, 0, 0.1); border: 1px solid black; width: 30%; position: absolute; bottom: -70px; left: -50%%; transform: translateX(-50%); ">
+    <h3 class="display-5" style="left: 30%; z-index: 1; position: relative; left: %; color: black;">Arman Cedric Almazora Delos Santos</h3>
+    <p class="lead" style="left: 30%; z-index: 1; position: relative; left: %; color: black;">(Ceddy)</p> 
+  </div>
+ 
+</section>  
+
+<br>
+<br>
+  <br>
+  <!-- Activity Feed -->
+
+  <div class="row">
+    <div class="col-lg-4">
+      <div class="card">
+        <div class="card-body" style="position: relative; padding-top: 20%;">
+		<div class="card-header" style="top: 0%; position: absolute; width: 100%; left: 0%; background-color:#c2eefdff;">
+          
+		  <h5 class="card-title">About Me</h5>
+		  
+		  </div>
+          <p class="card-text" >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sollicitudin, purus id ultrices sollicitudin, arcu ex auctor lacus, ac egestas orci metus eu purus.</p>
+        </div>
+        <div class="container">
+		<div class="card-header" style="background-color: #fbfe95ff; border-radius: 5px; border: 1px solid black;">
+          <h5 class="card-title">Connect with me</h5>
+		  </div>
+          <div class="row" style="padding: 5%;">
+	
+            <div class="col-sm-4">
+              <a href="#"> <img src="email.png" height="67px" style="margin-top: %; display: inline-block;"> </a>
+            </div>
+            <div class="col-sm-4">
+              <a href="#"> <img src="call.png" height="67px" style="margin-top: 0%; display: inline-block;"> </a>
+            </div>
+            <div class="col-sm-4">
+              <a href="#"> <img src="vid.png" height="67px" style="margin-top: 0%; display: inline-block;"> </a>
+            </div>
+          </div>
+        </div>
+        <br>
+        
+          <div class="card-body">
+		  <div class="card-header" style="background-color: #fbfe95ff; border-radius: 5px; border: 1px solid black;">
+            <h5 class="card-title">Recent Activity</h5>
+			</div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item" style="background-color:#fedff1ff; border: 1px solid black;">Posted a new picture</li>
+              <li class="list-group-item" style="background-color:#fedff1ff; border: 1px solid black;">Liked a post</li>
+              <li class="list-group-item" style="background-color:#fedff1ff; border: 1px solid black;">Commented on a post</li>
+            
+       <li class="list-group-item" style="background-color:#f6ebe8ff; border: 1px solid black;">
+      <h5 class="card-title" style="display: inline-block;">Picture Post</h5> <img src="more.png" height="20px" style="margin-top: 0%; float: right; display: inline-block; ">
+      <img src="postimage2.jpg" style="border: 1px solid black;" class="card-img-top" alt="...">
+      <p class="card-text mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet ullamcorper libero. Proin vitae dolor ornare, purus id ultrices sollicitudin, arcu ex auctor lacus, auctor odio nec, dictum enim. Nunc condimentum posuere purus, Sed sit amet ullamcorper libero. Proin vitae dolor ornare, purus id ultrices sollicitudin ac tincidunt nibh commodo non. Nullam non neque ac magna bibendum iaculis nec vitae justo. </p>
+      <hr style="border-bottom: 1px solid black;">
+	  <div class="card-text mt-3 d-flex align-items-center">
+        <button style="background-color: rgba(0, 0, 0, 0.0); border-radius: 100px; border: none;"><img src="like.png" height="40px" style="margin-top: 0%;"></button>
+        <p class="mb-0">30 Likes</p>
+        <button style="background-color: rgba(0, 0, 0, 0.0); border-radius: 100px; border: none;"><img src="comment.png" height="40px" style="margin-top: 0%;"></button>
+        <p class="mb-0">15 Comments</p>
+      </div>
+      <div class="card-text mt-3">
+        <form>
+          <div class="form-group">
+            <input style="border-radius: 30px; border: 1px solid black;" type="text" class="form-control" placeholder="Add a comment...">
+          </div>
+        </form>
+      </div>
+    </div> 
+       </li> </ul>
+		
+      </div>
+    </div>
+    <div class="col-lg-8">
+	
+<div class="card">
+  <div class="card-header">
+    <img src="profile.png" width="50px" class="rounded-circle mr-2" style="border: 1px solid black;" alt="Profile Picture">
+    <span class="font-weight-bold">Arman Cedric Almazora Delos Santos</span>
+   
+  </div>
+  <div class="card-body">
+    <div class="form-group">
+      <label for="post-input">What's on your mind?</label>
+      <textarea class="form-control" id="post-input" rows="3" style="border: 1px solid black;"></textarea>
+    </div>
+    <div class="btn-group" role="group" aria-label="Post Type">
+     <button style="background-color: rgba(0, 0, 0, 0.0); border-radius: 100px; border: none;"><img src="photo.png" height="57px" style="margin-top: 0%;"></button>
+	 <button style="background-color: rgba(0, 0, 0, 0.0); border-radius: 100px;  border: none;"><img src="video.png" height="57px" style="margin-top: 0%;"></button>
+	 <button style="background-color: rgba(0, 0, 0, 0.0); border-radius: 100px;  border: none;"><img src="vid.png" height="57px" style="margin-top: 0%;"></button>
+	 <button style="background-color: rgba(0, 0, 0, 0.0); border-radius: 100px; border: none;"><img src="event.png" height="57px" style="margin-top: 0%;"></button>
+    </div>
+    <button style="background-color: rgba(0, 0, 0, 0.0); border-radius: 100px; float: right; border: none;"><img src="post.png" height="67px" style="margin-top: 0%;"></button>
+  </div>
+</div>
+	
+	
+      <div class="card" style="background-color:;">
+        <div class="card-header">
+          <img src="profile.png" width="50px" class="rounded-circle mr-2" style="border: 1px solid black;" alt="Profile Picture">
+          <span class="font-weight-bold">Arman Cedric Almazora Delos Santos</span>
+          <span class="text-muted ml-2">2 hours ago</span>
+		  <img src="more.png" height="20px" style="margin-top: 0%; float: right; display: inline-block; ">
+        </div>
+		
+        <img  src="postimage.png" height="300px" style="border-bottom: 1px solid black;" alt="Card image cap">
+        <div class="card-body">
+          <p class="card-text"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet ullamcorper libero.  </p>
+          <hr style="border-bottom: 1px solid black;">
+		  <button style="background-color: rgba(0, 0, 0, 0.0); border-radius: 100px; border: none;"><img src="like.png" height="57px" style="margin-top: 0%;"></button>
+          <button style="background-color: rgba(0, 0, 0, 0.0); border-radius: 100px; border: none;"><img src="comment.png" height="57px" style="margin-top: 0%;"></button>
+		   <button style="background-color: rgba(0, 0, 0, 0.0); border-radius: 100px; border: none;"><img src="share.png" height="57px" style="margin-top: 0%;"></button>
+        </div>
+      </div>
+	  
+	  
+	  
+      <div class="card mt-3">
+  <div class="card-body">
+  <div class="card-header" style="top: 0%;  position: absolute; width: 100%;  left: 0%; background-color:#fbfe95ff;">
+    <h5 class="card-title" style="display: inline-block;">Comments</h5> <img src="more.png" height="20px" style="margin-top: 0%; float: right; display: inline-block; ">
+	</div>
+  </div>
+  <ul class="list-group list-group-flush" style="margin-top: 3%;">
+    <li class="list-group-item" style="background-color: #eae0ffff; border: 1px solid black;">
+      <div class="d-flex justify-content-between align-items-center">
+        <div class="d-flex align-items-center">
+          <img src="johndoe.png" width="50px" style="border: 1px solid black;" class="rounded-circle mr-2" alt="Profile Picture">
+          <div>
+            <h6 class="my-0">John Doe</h6>
+            <p class="small text-muted mb-0">March 1, 2023 at 2:30PM</p>
+          </div>
+        </div>
+        <div class="ml-3">
+	<button style="background-color: rgba(0, 0, 0, 0.0); border-radius: 100px; border: none;"><img src="like.png" height="57px" style="margin-top: 0%;"></button>
+          <button style="background-color: rgba(0, 0, 0, 0.0); border-radius: 100px; border: none;"><img src="comment.png" height="57px" style="margin-top: 0%;"></button>
+        </div>
+      </div>
+      <p class="mt-2 mb-0">Wow, amazing picture!</p>
+    </li>
+    <li class="list-group-item" style="background-color: #eae0ffff; border: 1px solid black; ">
+      <div class="d-flex justify-content-between align-items-center">
+        <div class="d-flex align-items-center">
+          <img src="janesmith.png" width="50px" style="border: 1px solid black;" class="rounded-circle mr-2" alt="Profile Picture">
+          <div>
+            <h6 class="my-0">Jane Smith</h6>
+            <p class="small text-muted mb-0">March 2, 2023 at 10:45AM</p>
+          </div>
+        </div>
+        <div class="ml-3">
+          <button style="background-color: rgba(0, 0, 0, 0.0); border-radius: 100px; border: none;"><img src="like.png" height="57px" style="margin-top: 0%;"></button>
+          <button style="background-color: rgba(0, 0, 0, 0.0); border-radius: 100px; border: none;"><img src="comment.png" height="57px" style="margin-top: 0%;"></button>
+        </div>
+      </div>
+      <p class="mt-2 mb-0">I wish I could be there right now.</p>
+    </li>
+    <li class="list-group-item" style="background-color: #eae0ffff; border: 1px solid black;">
+      <div class="d-flex justify-content-between align-items-center">
+        <div class="d-flex align-items-center">
+          <img src="kewpie.png" width="50px" style="border: 1px solid black;" class="rounded-circle mr-2" alt="Profile Picture">
+          <div>
+            <h6 class="my-0">Kew Pie</h6>
+            <p class="small text-muted mb-0">March 3, 2023 at 8:15AM</p>
+          </div>
+        </div>
+        <div class="ml-3">
+          <button style="background-color: rgba(0, 0, 0, 0.0); border-radius: 100px; border: none;"><img src="like.png" height="57px" style="margin-top: 0%;"></button>
+          <button style="background-color: rgba(0, 0, 0, 0.0); border-radius: 100px; border: none;"><img src="comment.png" height="57px" style="margin-top: 0%;"></button>
+        </div>
+      </div>
+      <p class="mt-2 mb-0">Absolutely stunning.</p>
+    </li>
+	  <li class="list-group-item" style="background-color: #fedff1ff; border: 1px solid black;">
+	    <form class="d-flex align-items-center">
+	      <img src="profile.png"  width="50px" style="border: 1px solid black;" class="rounded-circle mr-2" alt="Profile Picture">
+<input type="text" style="border-radius: 30px; border: 1px solid black;" class="form-control flex-grow-1 ml-2" placeholder="Write a comment...">
+<button style="background-color: rgba(0, 0, 0, 0.0); border-radius: 100px; border: none;"><img src="post.png" height="57px" style="margin-top: 0%;"></button>
+</form>
+</li>
+
+  </ul>
+</div>
+
+	  
+	 
+	  
+	  
+	  
+    </div>
+  </div>
+</div>
+
+
+
+  <!-- Material Design Cards -->
+  <div class="container">
+  
+     <div class="card">
+        <div class="card-body">
+		  <div class="card-header" style="top: 0%;  position: absolute; width: 100%;  left: 0%; background-color:#c2eefdff; ">
+          <h5 class="card-title" style="display: inline-block;">Photos</h5> <span class="text-muted ml-2" style="float: right; display: inline-block;">See all photos</span>
+		  </div>
+    <div class="card-deck" style="margin-top: 5%;">
+	
+      <div class="card" style="background-color: #fedff1ff;">
+        <img class="card-img-top" src="photo1.png" width="300px" alt="Card image cap">
+        <div class="card-body">
+          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sollicitudin arcu vel ligula dapibus, eu posuere nisi euismod. vel imperdiet odio magna eu ipsum.</p>
+		  <hr style="border-bottom: 1px solid black;">
+		  	  <div class="card-text mt-3 d-flex align-items-center" style="overflow: hidden;">
+        <button style="background-color: rgba(0, 0, 0, 0.0); border-radius: 100px; border: none;"><img src="like.png" height="40px" style="margin-top: 0%;"></button>
+        <p class="mb-0">20</p>
+        <button style="background-color: rgba(0, 0, 0, 0.0); border-radius: 100px; border: none;"><img src="comment.png" height="40px" style="margin-top: 0%;"></button>
+        <p class="mb-0">15</p>
+		<button style="background-color: rgba(0, 0, 0, 0.0); border-radius: 100px; border: none;"><img src="share.png" height="40px" style="margin-top: 0%;"></button>
+		<p class="mb-0">69</p>
+      </div>
+        </div>
+      </div>
+	  
+	  
+      <div class="card" style="background-color: #f6ebe8ff;">
+        <img class="card-img-top" src="photo2.png" width="300px" alt="Card image cap" >
+        <div class="card-body">
+          <p class="card-text"> Sed sollicitudin arcu vel ligula dapibus, eu posuere nisi euismod. Ut convallis, velit in gravida pharetra, neque ipsum aliquam magna, vel imperdiet odio magna eu ipsum.</p>
+		  <hr style="border-bottom: 1px solid black;">
+		  	  <div class="card-text mt-3 d-flex align-items-center" style="overflow: hidden;>
+        <button style="background-color: rgba(0, 0, 0, 0.0); border-radius: 100px; border: none;"><img src="like.png" height="40px" style="margin-top: 0%;"></button>
+        <p class="mb-0">90</p>
+        <button style="background-color: rgba(0, 0, 0, 0.0); border-radius: 100px; border: none;"><img src="comment.png" height="40px" style="margin-top: 0%;"></button>
+        <p class="mb-0">56</p>
+		<button style="background-color: rgba(0, 0, 0, 0.0); border-radius: 100px; border: none;"><img src="share.png" height="40px" style="margin-top: 0%;"></button>
+		<p class="mb-0">49</p>
+      </div>
+		</div>
+		</div>
+		
+	<div class="card" style="background-color: #fedff1ff;">
+	<img class="card-img-top" src="photo3.png" width="300px" alt="Card image cap">
+	<div class="card-body">
+	<p class="card-text"> Ut convallis, velit in gravida pharetra, neque ipsum aliquam magna, vel imperdiet odio magna eu ipsum.</p>
+	<hr style="border-bottom: 1px solid black;">
+		  	  <div class="card-text mt-3 d-flex align-items-center" style="overflow: hidden;>
+        <button style="background-color: rgba(0, 0, 0, 0.0); border-radius: 100px; border: none;"><img src="like.png" height="40px" style="margin-top: 0%;"></button>
+        <p class="mb-0">30</p>
+        <button style="background-color: rgba(0, 0, 0, 0.0); border-radius: 100px; border: none;"><img src="comment.png" height="40px" style="margin-top: 0%;"></button>
+        <p class="mb-0">55</p>
+		<button style="background-color: rgba(0, 0, 0, 0.0); border-radius: 100px; border: none;"><img src="share.png" height="40px" style="margin-top: 0%;"></button>
+		<p class="mb-0">79</p>
+      </div>
+	</div>
+	</div>
+
+
+</div></div></div>
+
+  </div>
+
+  <!-- jQuery and Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
