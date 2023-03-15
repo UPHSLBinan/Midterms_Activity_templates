@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Restawrant</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <!-- Material Design Icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body style="background-image: url('https://media2.giphy.com/media/10SrYA07iDPyO4/giphy.gif?cid=ecf05e476whdqz750aud7a9ow6t8ar9bxzhxtfiedc988726&rid=giphy.gif&ct=g'); background-size: cover">
+  <div class="container">
+		<div class="row">
+			<div class="col-md-6 offset-md-3 form-container" style="color: #FFFFFF">
+				<h2>Restaurant Form</h2>
+				<form>
+					<div class="form-group">
+						<label for="name"><i class="material-icons">person</i> Name:</label>
+						<input type="text" class="form-control" id="name" placeholder="Enter Fullname" required>
+					</div>
+					<div class="form-group">
+						<label for="email"><i class="material-icons">email</i> Email:</label>
+						<input type="email" class="form-control" id="email" placeholder="Enter E-mail" required>
+					</div>
+					<div class="form-group">
+						<label for="phone"><i class="material-icons">phone</i> Phone:</label>
+						<input type="tel" class="form-control" id="phone" placeholder="Enter phone-number" required>
+					</div>
+					<div class="form-group">
+						<label for="reservation"><i class="material-icons">event</i> Reservation Date:</label>
+						<input type="date" class="form-control" id="reservation" required>
+					</div>
+					<div class="form-group">
+						<label for="guests"><i class="material-icons">people</i> Number of Guests:</label>
+						<input type="number" class="form-control" id="guests" placeholder="Enter Number of Guests" required>
+					</div>
+					<div class="form-group">
+						<label for="special"><i class="material-icons">note</i> Special Requests:</label>
+						<textarea class="form-control" id="special" rows="3" placeholder="Enter Any Special Requests"></textarea>
+					</div>
+					<button type="submit" class="btn btn-primary">Let's Eat</button>
+				</form>
+			</div>
+		</div>
+	</div>
