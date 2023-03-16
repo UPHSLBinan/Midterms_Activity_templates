@@ -1,0 +1,152 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+			margin: 0;
+			padding: 0;
+			background-color: #f7f7f7;
+			font-family: Arial, sans-serif;
+		}
+		header {
+			background-color: #1da1f2;
+			color: #fff;
+			padding: 10px;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100%;
+			z-index: 1;
+		}
+		nav {
+			background-color: #fff;
+			padding: 10px;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+			position: fixed;
+			top: 70px;
+			left: 0;
+			width: 100%;
+			z-index: 1;
+			box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.18);
+            height: 53px;
+            padding: 0 10px;
+		}
+		.nav-list {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-list li {
+    margin-right: 20px;
+  }
+  
+  .nav-list li:last-child {
+    margin-right: 0;
+  }
+  
+  .nav-list li a {
+    color: #1da1f2;
+    font-size: 19px;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  .nav-list li a:hover {
+    text-decoration: underline;
+  }
+		.container {
+			max-width: 1200px;
+			margin: 80px auto;
+			display: flex;
+			justify-content: space-between;
+		}
+		.main-content {
+			flex-basis: 70%;
+			background-color: #fff;
+			padding: 20px;
+			box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+		}
+		.right-sidebar {
+			flex-basis: 25%;
+			background-color: #fff;
+			padding: 20px;
+			box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+		}
+		.footer {
+			background-color: #f7f7f7;
+			padding: 20px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			text-align: center;
+			font-size: 12px;
+			color: #999;
+			position: fixed;
+			bottom: 0;
+			left: 0;
+			width: 100%;
+}
+			
+.tweet-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  border: 1px solid #e1e8ed;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+/* Style for the tweet */
+.tweet {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 10px;
+}
+
+/* Style for the profile picture */
+.tweet img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+/* Style for the tweet content */
+.tweet-content {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Style for the tweet header */
+.tweet-header {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+/* Style for the username */
+.tweet-header h3 {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+/* Style for the Twitter handle */
+.tweet-header span:first-child {
+  color: gray;
+  font-size: 0.8rem;
+}
+
+/* Style for the tweet date */
+.tweet-header .tweet-date {
+  color: gray;
+  font-size: 0.8rem;
+}
+
+
