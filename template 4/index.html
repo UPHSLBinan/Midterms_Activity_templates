@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <title>Twitter Sign up</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <!-- Material Design for Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.11/css/mdb.min.css">  
+  <!-- Custom CSS -->
+  <style>
+    body {
+      background-color: #E5E5E5;
+    }
+    .card {
+      margin-top: 50px;
+      background-color: #567B9E;
+      box-shadow: 0px 2px 10px rgba(0,0,0,0.5);
+    }
+    .card-header {
+      background-color: #203B73;
+      color: #51A3F0;
+      font-family: 'Gill Sans';
+      text-align: center;
+      padding: 20px;
+    }
+    .form-group {
+      margin-bottom: 20px;
+    }
+    label {
+      display: block;
+      margin-bottom: 10px;
+      font-size: 18px;
+      color: #FFFFFF;
+    }
+    img {
+      vertical-align: middle;
+      margin-right: 10px;
+    }
+    input,
+    textarea {
+      border-radius: 5px;
+      border: none;
+      background-color: #FFFFFF;
+      padding: 10px;
+      width: 100%;
+      font-size: 16px;
+      color: #555555;
+      box-shadow: 0px 1px 5px rgba(0,0,0,0.2);
+    }
+    button {
+      background-color: #51A3F0;
+      border-radius: 5px;
+      border: none;
+      color: #FFFFFF;
+      font-size: 18px;
+      font-weight: bold;
+      padding: 15px;
+      width: 100%;
+      transition: background-color 0.2s ease;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #203B73;
+    }
+	  .blink {
+                animation: blinker 2s linear infinite;
+                color: red;
+                font-family: sans-serif;
+            }
+            @keyframes blinker {
+                50% {
+                    opacity: 0;
+                }
+            }
+	  
+  </style>
+</head>
+	
+	
+<body style="background-image: url('bg.gif'); font-family: 'Gill Sans'">
+
+  <div class="container mt-5" style="margin: auto">
+    <div class="card mx-auto" style="max-width: 450px; background-color: #75DCF7">
+       <div class="card-header" style="background-color: #00454B">
+       <h4 class="text-center; blink" style="color: #FFFFFF; font-family: 'Gill Sans'"><img width="23" height="23" src="material design/twitter.png">Twitter Register <img width="23" height="23" src="material design/twitter.png"></h4> 
+      </div>
+      <div class="card-body">
+
+        <!-- Contact Form -->
+		  
+        <form id="contact-form" method="post" action="" role="form">
+      <div class="form-group">
+        <label for="name" style="color: black"><img width="17" height="17" src="material design/name.png">Username</label>
+        <input type="text" class="form-control" id="name" name="name" placeholder="Create Username" required>
+      </div>
+		
+      <div class="form-group">
+        <label for="password" style="color: black"><img width="17" height="17" src="material design/password.png">Password</label>
+        <input type="text" class="form-control" id="password" name="password" placeholder="Create Password" required>
+      </div>
+			
+	  <div class="form-group">
+        <label for="password" style="color: black"><img width="17" height="17" src="material design/confirm.png">Confirm Password</label>
+        <input type="text" class="form-control" id="confirmpassword" name="confirmpassword" placeholder="Confirm Password" required>
+      </div>		
+		
+      <div class="form-group">
+        <label for="email" style="color: black"><img width="17" height="17" src="material design/email.png">Email</label>
+        <input type="email" class="form-control" id="email" name="email" placeholder="Input Email" required>
+      </div>
+		
+      <div class="form-group">
+        <label for="contact" style="color: black"><img width="17" height="17" src="material design/contact.png">Contact Number</label>
+        <input type="int" class="form-control" id="contact" name="contact" placeholder="Input Contact Number" required>
+      </div>		
+		
+		<div class="form-group">
+		<input type="checkbox" style="width: inherit; height: inherit"> Agree to terms and conditions
+		</div>	
+			
+		
+      <button type="submit" ; style="background-color: #00454B; padding: 5px 10px">Register</button>
+    </form>
+	
+	<div class="mt-3 text-center">
+		<p>Already have an account?</p>
+		<button type="button" style="margin: auto; background-color: #00454B; padding: 5px 10px">Sign In</button>
+	</div>
+
+  </div>
+</div>
+  </div>
+      
+	
+
+
+</body>
+</html>
