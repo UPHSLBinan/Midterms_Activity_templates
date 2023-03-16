@@ -1,0 +1,233 @@
+@charset "utf-8";
+/* CSS Document */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Arial";
+  background-image:url('bg img/bg.jpg');
+	align-content: center;
+	background-position: center;
+	  background-size: cover;
+	margin: 0;
+    max-width: 1880px;
+    width: 100%;
+}
+
+
+ .blink {
+        animation: blink-animation 1s ease infinite alternate;
+    }
+    
+    @keyframes blink-animation {
+        0% {
+            opacity: 0.2;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+    
+    
+/* Style the header */
+.header {
+			background-color: #232323;
+			color: red;
+			padding: 30px;
+			text-align: center;
+			font-size: 35px;
+			font-family: "Arial";
+	        max-width: 1655px;
+	        margin: auto;
+		}
+
+/* Create three equal columns that floats next to each other */
+.column {
+			padding: 10px;
+			height: 306px;
+			display: flex;
+            margin: 1px;
+			box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+			transition: box-shadow 0.2s ease-in-out;
+	        max-width: 100%;
+		}
+		.column:hover {
+			box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+		}
+/* Clear floats after the columns */
+.row:active {
+			 background-color: #774849;
+    max-width: 100%;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+		}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+
+/* Style the footer */
+.footer {
+  max-width: 1655px;
+  background-color: #f1f1f1;
+  padding: 30px;
+  text-align: center;
+  margin: auto;
+}
+
+.btnniruz {
+			background-color: red;
+			color: #ffffff;
+			border: none;
+			padding: 10px 20px;
+			font-size: 18px;
+			font-weight: bold;
+			cursor: pointer;
+			margin-right: 10px;
+			box-shadow: 2px 2px #aaaaaa;
+			transition: background-color 0.3s ease;
+		}
+		.btnniruz:hover {
+			background-color: #232323;
+		}
+
+h2 {
+			font-size: 28px;
+			margin-top: 20px;
+			margin-bottom: 20px;
+		}
+
+#myCarousel {
+  max-width: 100%;
+	overflow: hidden; 
+	margin: auto;
+
+}
+
+/* Carousel indicators */
+.carousel-indicators li {
+  width: 15px;
+  height: 15px;
+  margin: 5px;
+  border-radius: 10%;
+  border: none;
+  background-color: #ddd;
+}
+
+.carousel-indicators .active {
+  background-color: #007bff;
+}
+
+/* Carousel images */
+.carousel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+	display: block;
+}
+
+/* Carousel controls */
+.carousel-control-prev:focus {
+  width: auto;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 50%;
+  outline: none;
+}
+
+.carousel-control-prev-icon{
+  color: #fff;
+}
+
+.carousel-control-prev {
+  margin-left: 30px;
+}
+
+.carousel-control-next:focus {
+  width: auto;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 50%;
+  outline: none;
+}
+.carousel-control-next-icon {
+  color: #fff;
+}
+
+.carousel-control-next {
+  margin-right: 30px;
+}
+
+.carousel-inner:focus {
+outline: none;
+}
+
+.parallax {
+	background-image: url("bg img/bg.jpg");
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 500px;
+	padding: 100px 0;
+}
+
+.parallax {
+	background-image: url("bg img/bg.jpg");
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 500px;
+	padding: 100px 0;
+}
+
+.parallax-text {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: #fff;
+	font-size: 4em;
+	font-weight: bold;
+	text-align: center;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	/* set a large height to enable scrolling */
+	background-image: url("bg img/bg.jpg");
+	background-size: cover;
+	background-attachment: fixed;
+	max-width: 100%;
+	width: 100%;
+}
+
+.container {
+	position: relative;
+	height: auto;
+	background-color: rgba(255, 255, 255, 0.5);
+}
+
+.box {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	padding: 20px;
+	background-color: rgba(255, 255, 255, 0.8);
+}
+
+/* for footer */
+.middle{
+	margin-left: 360px;
+}
+
+
+
+
+
