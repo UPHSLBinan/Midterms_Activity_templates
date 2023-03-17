@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Hospital Form</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-material-design/4.1.1/bootstrap-material-design.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <style>
+    body {
+      background-image: url("blur-hospital.jpg");
+		background-size: cover;
+		font-family: Bahnschrift, "Bahnschrift Condensed";
+		font-size: bolder;
+		color: #1DB7B4;
+			
+		
+    }
+	  .card-header {
+			background-color:#1DB7B4;
+			color: #fff;
+		  font: bold;
+		}
+  </style>
+</head>
+<body>
+  <div class="container mt-3">
+	  <div class="card">
+		  <center>
+	  <div class="card-header">
+    <h1 class="card-title mb-0">HOSPITAL FORM</h1>
+	  </div>
+			  </center>
+    <hr>
+		  <div class="card-body">
+    <form>
+      <div class="form-group">
+        <label for="name">NAME:</label>
+        <input type="text" class="form-control" id="name" placeholder="Enter name">
+      </div>
+      <div class="form-group">
+        <label for="email">EMAIL:</label>
+        <input type="email" class="form-control" id="email" placeholder="Enter email">
+      </div>
+      <div class="form-group">
+        <label for="phone">PHONE:</label>
+        <input type="tel" class="form-control" id="phone" placeholder="Enter phone">
+      </div>
+      <div class="form-group">
+        <label for="address">ADDRESS:</label>
+        <input type="text" class="form-control" id="address" placeholder="Enter address">
+      </div>
+      <div class="form-group">
+        <label for="gender">GENDER:</label>
+        <select class="form-control" id="gender">
+          <option>Male</option>
+          <option>Female</option>
+          <option>Other</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="dob">DATE OF BIRTH:</label>
+        <input type="date" class="form-control" id="dob" placeholder="Enter date of birth">
+      </div>
+      <div class="form-group">
+        <label for="medicalHistory">MEDICAL HISTORY:</label>
+        <textarea class="form-control" id="medicalHistory" placeholder="Enter medical history"></textarea>
+      </div>
+		<center>
+      <button type="submit" class="btn btn-info">Submit</button>
+			</center>
+    </form>
+  </div>
+	</div>  
+	  </div> 
+		
+</body>
+</html>
