@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap');
+
+*{
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+body {
+    background-color: #111616;
+font-weight: 600;
+    font-size: 15px;
+    text-align: center;
+    color:white;
+}
+
+header{
+    background-color: #111616;
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+    padding: 5px 10%;
+}
+
+.logo {
+    cursor: pointer;
+    width: 150px;
+    float: left;
+}
+
+.nav_links li {
+ display: inline-block;
+  padding: 0px 70px;
+}
+.nav_links li a {
+ transition: all 0.3s ease 0s;
+}
+
+.nav_links li a:hover {
+color:rgba(0, 136, 169, 0.8)
+}
+
+button {
+ padding: 9px 25px;
+ background-color:rgb(179, 169, 169);
+ border: none;
+ border-radius: 50px;
+ cursor: pointer;
+ transition: all 0.3s ease 0s;
+ font-weight: 900;
+}
+button:hover {
+background-color: rgba(255, 0, 0, 0.8);
+}
+
+.search-form {
+width: 500px;
+height: 50px;
+background-color: white;
+display: flex;
+align-items: center;
+padding: 20px;
+cursor: pointer;
+border-radius: 20px;
+
+
+}
+.search-form > input {
+height: 50px;
+width: 400px;
+border:none;
+outline: none;
+font-size: 18px;
+padding-left: 10px;
+display: flex;
+}
+.material-icons {
+    cursor: pointer; 
+    padding: 9px 25px;
+    background-color:rgba(66, 65, 63, 0.938);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+.material-icons:hover {
+    background-color: rgba(238, 0, 0, 0.8);
+}
+
+
+#main-div {
+width: 100%;
+min-height: 1000px;
+background-color: #111616;
+}
+
+#side-div{
+width: 20%;
+min-height: 980px;
+background-color: rgba(66, 65, 63, 0.938);
+float:right;
+margin-top: 20px;
+margin-right: 20px;
+border-radius: 10px;
+}
+
+#video-div{
+    width: 70%;
+    min-height: 700px;
+    float:left;
+    margin-top: 40px;
+    margin-left: 70px;
+}
+#title-div{
+    width: 70%;
+    min-height: 30px;
+    float:left;
+    margin-top: 20px;
+    margin-left: 90px;
+}
+#desc-div{
+    width: 70%;
+    min-height: 70px;
+    float:left;
+    margin-top: 30px;
+    margin-left: 90px;
+    border-radius: 30px;
+}
+img{
+    max-width: 50%;
+    max-height: 100%;
+    display: block;
+    margin-top: 20px;
+    margin-left: 90px;
+    margin-bottom: 10px;
+}
+#videomp4{
+width: 1300px;
+}
+
+h2{
+float: left;
+color: #DEE1DD;
+}
+hr {
+    border: 1px solid black;
+  }
+  #desc-div:hover{
+    background-color: rgba(196, 98, 7, 0.8);
+  }
+  p{
+justify-content:left;
+margin-top: 10px;
+color: #DEE1DD;
+  }

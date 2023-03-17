@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap');
+
+
+*
+{
+margin:0;
+padding:0;
+box-sizing: border-box;
+
+}
+body {
+    min-height: 100vh;
+ background: linear-gradient(#ad6608,#e28e1f);
+ background-image:url('bgknoha.png');
+ font-family: "Josefin Sans", sans-serif;
+ background-repeat: no-repeat;
+ background-color:#ad6608;
+}
+
+header {
+
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+header ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul li {
+
+    list-style: none;
+    margin-left: 20px;
+}
+
+header ul li a {
+    text-decoration: none;
+    padding: 6px 15px;
+    color:black;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+header ul li a:hover 
+{
+    background: white;
+    color: black;
+    border-radius: 20px;
+}
+
+header img {
+    height: 200px;
+    padding: 20px;
+}
+
+section 
+{
+position: relative;
+width: 100%;
+height:100vh;
+padding: 100px;
+display:flex;
+justify-content: center;
+align-items: center;
+}
+
+section img{
+
+    position:absolute;
+    padding: 100px;
+    display: block;
+    margin-left: 20px;
+    margin-bottom: 300px;
+
+
+
+
+}
+
+#text {
+    position: absolute;
+    color: #000000;
+    white-space: nowrap;
+    font-size: 45px;
+    z-index: 9;
+    margin-left: 70px;
+    margin-right: auto;
+    margin-top: 250px;
+    font-family: "Josefin Sans", sans-serif;
+
+
+}
+
+#btn {
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 30px;
+    border-radius: 40px;
+    background: rgb(230, 123, 37);
+    column-rule: black;
+    font-size: 1.5em;
+    margin-top: 40px;
+    cursor: pointer;
+    font-family: "Josefin Sans", sans-serif;
+    margin-left: 20px;
+}
