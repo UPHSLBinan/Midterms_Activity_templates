@@ -1,0 +1,193 @@
+body {
+    background-color: #F2AA4CFF;
+    font-family: Arial, sans-serif;
+    color: #101820FF;
+    margin: 0;
+    padding: 0;
+  }
+  
+  input {
+    background: white;  
+    color: #101820FF;
+    border: 2px solid #101820FF;
+    padding: 8px;
+    text-align: center;
+  }
+  
+  ::placeholder {
+    color: #101820FF;
+    opacity: 40%;
+  }
+  
+  img {
+    align-items: center;
+    width: 220px;
+    height: 326px;
+  }
+  
+  #todaysDeal {
+    float: left;
+    width: 30%;
+    background-color: #F2AA4CFF;
+    text-align: center;
+  }
+  
+  #cart {
+    float: right;
+    background-color: #F2AA4CFF;
+    width: 70%;
+    text-align: center;
+  }
+  
+  #orderButton {
+    width: 50%;
+  }
+  
+  orderButton {  
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+  }
+  
+  orderButton:hover {
+    background-color: greenyellow;
+    color: #333;
+  }
+  
+  .movie {
+    text-align: center;
+    margin: 20px;
+  }
+  
+  #cartTable {
+    color: #101820FF;
+    width: 100%;
+    border-collapse: collapse;
+    margin: auto;
+  }
+  
+  #cartTable td, #cartTable th {
+    border: 2px solid #101820FF;
+    background-color: white;
+    opacity: 40%;
+    padding: 10px;
+    text-align: left;
+  }
+  
+  #totalCost {
+    font-weight: bold;
+    margin-top: 20px;
+    display: block;
+    text-align: center;
+  }
+  
+  
+  #title {
+    float: center;
+  }
+  
+  h1 {
+    text-align: center;
+    color: #F2AA4CFF;
+    background-color:#101820FF ;
+    margin: 0;
+    padding: 20px 0;
+  }
+  
+  h2 {
+    text-align: center;
+  }
+  
+  button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+    
+  button:hover {
+    background-color: greenyellow;
+    color: #333;
+  }
+
+  /* Styles for screens smaller than 600px */
+@media (max-width: 600px) {
+    #todaysDeal {
+      float: none;
+      width: 100%;
+    }
+  
+    #cart {
+      float: none;
+      width: 100%;
+    }
+  }
+  
+  /* Styles for screens between 600px and 900px */
+  @media (min-width: 600px) and (max-width: 900px) {
+    #todaysDeal {
+      width: 50%;
+      float: left;
+    }
+  
+    #cart {
+      width: 50%;
+      float: right;
+    }
+  }
+  
+  /* Styles for screens larger than 900px */
+  @media (min-width: 900px) {
+    #todaysDeal {
+      float: left;
+      width: 30%;
+    }
+  
+    #cart {
+      float: right;
+      width: 70%;
+    }
+  }
+  
+  /* Common styles for all screen sizes */
+  body {
+    background-color: #F2AA4CFF;
+    font-family: Arial, sans-serif;
+    color: #101820FF;
+    margin: 0;
+    padding: 0;
+  }
+  
+  input {
+    background: white;  
+    color: #101820FF;
+    border: 2px solid #101820FF;
+    padding: 8px;
+    text-align: center;
+  }
+  
+  ::placeholder {
+    color: #101820FF;
+    opacity: 40%;
+  }
+  
+  img {
+    align-items: center;
+    max-width: 100%;
+    height: auto;
+  }
+  
+  #todaysDeal {
+    background-color: #F2AA4CFF;
+    text-align: center;
+  }
+  
+  #cart {
+    background-color: #F2AA4CFF;
+    text-align: center;
+  }
+  
+  #orderButton {
+    width: 50%;
+  }

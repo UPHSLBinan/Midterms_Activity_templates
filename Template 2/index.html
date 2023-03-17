@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" type="text/css" href="style.css" />
+		<title>NetFlex</title>
+	</head>
+
+	<body>
+		<h1>Online Movie Booking</h1>
+		<h1>NetFlex</h1>
+		<div class="background">
+			<div id="todaysDeal">
+				<h2>Today's Deal</h2>
+				<div class="movie">
+					<img id="avengers" src="https://m5.gs/SzlWOH" alt="Avengers" />
+					<h3>Avengers</h3>
+					<p>Price: P270.00</p>
+					<input id="avengers-ticket" placeholder="Quantity" />
+					<button id="ticket" onclick="purchase('avengers')">Purchase</button>
+					<br /><br />
+				</div>
+				<div class="movie">
+					<img
+						class="avengers"
+						src="https://rb.gy/tsauzq"
+						alt="Avenger Age of Ultron"
+					/>
+					<h3>Avengers Age of Ultron</h3>
+					<p>Price: P300.00</p>
+					<input id="ultron-ticket" placeholder="Quantity" />
+					<button id="ticket" onclick="purchase('ultron')">Purchase</button>
+					<br /><br />
+				</div>
+				<div class="movie">
+					<img
+						class="avengers"
+						src="https://rb.gy/vzfmrs"
+						alt="Avengers Infinity War"
+					/>
+					<h3>Avengers Infinity War</h3>
+					<p>Price: P325.00</p>
+					<input id="infinity-ticket" placeholder="Quantity" />
+					<button id="ticket" onclick="purchase('infinity')">Purchase</button>
+					<br /><br />
+				</div>
+				<div class="movie">
+					<img
+						class="avengers"
+						src="https://rb.gy/johslw"
+						alt="Avengers Endgame"
+					/>
+					<h3>Avengers Endgame</h3>
+					<p>Price: P325.00</p>
+					<input id="endgame-ticket" placeholder="Quantity" />
+					<button id="ticket" onclick="purchase('endgame')">Purchase</button>
+					<br /><br />
+				</div>
+				<div class="movie">
+					<img
+						class="avengers"
+						src="https://rb.gy/wyfror"
+						alt="Avenger Secret Wars"
+					/>
+					<h3>Avengers Secret Wars</h3>
+					<p>Price: P350.00</p>
+					<input id="secret-ticket" placeholder="Quantity" />
+					<button id="ticket" onclick="purchase('secret')">Purchase</button>
+					<br /><br />
+				</div>
+				<div class="movie">
+					<img
+						class="avengers"
+						src="https://rb.gy/son43f"
+						alt="Avenger Kang Dynasty"
+					/>
+					<h3>Avengers Kang Dynasty</h3>
+					<p>Price: P375.00</p>
+					<input id="kang-ticket" placeholder="Quantity" />
+					<button id="ticket" onclick="purchase('kang')">Purchase</button>
+					<br /><br />
+				</div>
+			</div>
+			<div id="cart">
+				<h2>Shopping Cart</h2>
+				<table id="cartTable">
+					<thead>
+						<tr>
+							<th>Movie Title</th>
+							<th>Price</th>
+							<th>Quantity</th>
+							<th>Total</th>
+						</tr>
+					</thead>
+					<tbody></tbody>
+				</table>
+				<p id="totalCost">Total Cost: P0.00</p>
+				<button id="orderButton" onclick="alert('Thank You For Purchasing')">
+					Order Now!
+				</button>
+			</div>
+		</div>
+		<script src="script.js"></script>
+	</body>
+</html>
