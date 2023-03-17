@@ -107,8 +107,9 @@ section img{
     background: rgb(230, 123, 37);
     column-rule: black;
     font-size: 1.5em;
-    margin-top: 40px;
+    margin-top: 60px;
     cursor: pointer;
     font-family: "Josefin Sans", sans-serif;
     margin-left: 20px;
+    position: absolute;
 }
