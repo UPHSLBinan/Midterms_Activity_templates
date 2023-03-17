@@ -20,6 +20,7 @@ body{
 .box, .box button{
     display: flex;
     align-items: center;
+    
 }
 .box{
     width: 300px;
@@ -37,6 +38,7 @@ body{
     border-radius: 20px;
     justify-content: center;
     font-family: 'Poppins', sans-serif;
+
 }
 .box-one button img{
     margin: 0 .5rem;
@@ -46,13 +48,14 @@ body{
     font-size: 1.8rem;
 }
 .box-two input{
-    position: relative;
+    position:relative;
     width: 300px;
-    height: 55px;
+    height: 60px;
     outline: none;
     border: 1px solid rgb(211, 210, 210);
     border-radius: 4px;
-    padding-left: 10px;
+    padding-left: 20px;
+    
 
 }
 .box-two input label{
@@ -67,6 +70,7 @@ body{
 }
 .box-two .next-btn{
     background-color: #121212;
+    margin-top:30px;
     color: #fff;
 }
 .container p{
