@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Registration Form</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<style>
+		body {
+			animation: background 10s ease infinite;
+        background-image: url('https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExNDY4OGMyZjQ2NmYwNjMxYjA1NWMxMjJjNDQ3OTc0OGRhODNiZWMxMiZjdD1n/u9FD8gYWCsrLWmhQUF/giphy.gif');
+        background-size: cover;
+      
+			background-repeat: no-repeat;
+			background-size: cover;
+			padding: 10px;
+		}
+		.container {
+			background-color: white;
+			padding: 20px;
+			border-radius: 10px;
+			box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+		}
+		h1 {
+			font-size: 30px;
+			font-weight: bold;
+			text-align: center;
+			margin-bottom: 30px;
+			color: #333;
+			text-shadow: 1px 1px 2px #ccc;
+		}
+		.form-control {
+			border-radius: 0px;
+			border: none;
+			border-bottom: 2px solid #ccc;
+			box-shadow: none;
+			padding: 5px 10px;
+			font-size: 16px;
+			font-weight: bold;
+		}
+		.form-control:focus {
+			border-color: #4CAF50;
+			box-shadow: none;
+		}
+		.material-icons {
+			margin-right: 5px;
+			color: #4CAF50;
+			font-size: 24px;
+		}
+		.btn {
+			border-radius: 0px;
+			border: none;
+			background-color: #4CAF50;
+			color: #fff;
+			font-weight: bold;
+			padding: 10px 20px;
+			margin-top: 20px;
+			text-transform: uppercase;
+			letter-spacing: 2px;
+		}
+		.btn:hover {
+			background-color: #333;
+			color: #fff;
+		}
+
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+}
+100% {
+	background-position: 0% 50%;
+}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<h1>Registration Form</h1>
+		<form>
+			<div class="form-group">
+				<label for="name"><i class="material-icons">person</i>Name:</label>
+				<input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+			</div>
+			<div class="form-group">
+				<label for="email"><i class="material-icons">email</i>Email:</label>
+				<input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+			</div>
+			<div class="form-group">
+				<label for="password"><i class="material-icons">lock</i>Password:</label>
+				<input type="password" class="form-control" id="password" placeholder="Enter your password" required>
+			</div>
+			<div class="form-group">
+				<label for="confirm_password"><i class="material-icons">lock</i>Confirm Password:</label>
+				<input type="password" class="form-control" id="confirm_password" placeholder="Confirm your password" required>
+			</div>
+			<button type="submit" class="btn">Register</button>
+		</form>
+	</div>
+</body>
+</html>

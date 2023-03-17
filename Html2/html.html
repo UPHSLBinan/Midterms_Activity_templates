@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Education Registration Form</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<style>
+		
+			 body {
+        animation: background 10s ease infinite;
+        background-image: url('https://media.giphy.com/media/G8NKqvsjsHyhJpFGLn/giphy.gif');
+        background-size: cover;
+      
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<h4 class="center-align">Education Registration Form</h4>
+		<form>
+			<div class="row">
+				<div class="input-field col s6">
+					<i class="material-icons prefix">account_circle</i>
+					<input id="first_name" type="text" class="validate">
+					<label for="first_name">First Name</label>
+				</div>
+				<div class="input-field col s6">
+					<i class="material-icons prefix">account_circle</i>
+					<input id="last_name" type="text" class="validate">
+					<label for="last_name">Last Name</label>
+				</div>
+			</div>
+			<div class="row">
+				<div class="input-field col s12">
+					<i class="material-icons prefix">email</i>
+					<input id="email" type="email" class="validate">
+					<label for="email">Email</label>
+				</div>
+			</div>
+			<div class="row">
+				<div class="input-field col s12">
+					<i class="material-icons prefix">school</i>
+					<input id="university" type="text" class="validate">
+					<label for="university">University</label>
+				</div>
+			</div>
+			<div class="row">
+				<div class="input-field col s12">
+					<i class="material-icons prefix">vpn_key</i>
+					<input id="password" type="password" class="validate">
+					<label for="password">Password</label>
+				</div>
+			</div>
+			<div class="row">
+				<div class="input-field col s12">
+					<i class="material-icons prefix">vpn_key</i>
+					<input id="confirm_password" type="password" class="validate">
+					<label for="confirm_password">Confirm Password</label>
+				</div>
+			</div>
+			<div class="row">
+				<div class="input-field col s12">
+					<button class="btn waves-effect waves-light" type="submit" name="action">Submit
+						<i class="material-icons right">send</i>
+					</button>
+				</div>
+			</div>
+		</form>
+	</div>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+</html>
