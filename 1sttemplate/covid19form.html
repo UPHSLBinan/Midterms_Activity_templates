@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>COVID-19 Self-Assessment Form</title>
+	 <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+</head>
+<body style="background-image: url('img/coronavirus-covid-19-pandemic-infection-spreading-background-design-vector.webp'); background-size: cover">
+  <div class="container">
+    <h1>COVID-19 Self-Assessment Form</h1>
+    <form>
+      <div class="form-group">
+       <label for="nameInput"><b>Name:</b></label>
+        <input type="text" class="form-control" id="nameInput" placeholder="Enter your name">
+      </div>
+     <div class="form-group">
+      <label for="emailInput"><b>Email:</b></label>
+       <input type="email" class="form-control" id="emailInput" placeholder="Enter your email">
+        </div>
+       <div class="form-group">
+        <label for="phoneInput"><b>Phone number:</b></label>
+         <input type="tel" class="form-control" id="phoneInput" placeholder="Enter your phone number">
+       </div>
+      <div class="form-group">
+       <label for="ageInput"><b>Age:</b></label>
+        <input type="number" class="form-control" id="ageInput" placeholder="Enter your age">
+       </div>
+      <div class="form-group">
+       <label for="genderInput"><b>Gender:</b></label>
+        <select class="form-control" id="genderInput">
+          <option value="">Select gender</option>
+           <option value="male">Male</option>
+            <option value="female">Female</option>
+             <option value="other">Other</option>
+            </select>
+           </div>
+          <div class="form-group">
+	     <div class="form-group">
+ 	   <label for="addressInput"><b>Address:</b></label>
+ 	  <input type="text" class="form-control" id="addressInput" placeholder="Enter your address">
+	 </div>
+      <label for="countryInput"><b>Country:</b></label>
+       <input type="text" class="form-control" id="countryInput" placeholder="Enter your country">
+        </div>
+       <div class="form-group">
+        <label for="cityInput"><b>City/Town:</b></label>
+         <input type="text" class="form-control" id="cityInput" placeholder="Enter your city/town">
+        </div>
+       <div class="form-group">
+        <label for="symptomsInput"><b>Do you have any of these symptoms?</b></label>
+         <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="fever" id="feverCheckbox">
+           <label class="form-check-label" for="feverCheckbox">Fever</label>
+          </div>
+         <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="cough" id="coughCheckbox">
+           <label class="form-check-label" for="coughCheckbox">Cough</label>
+          </div>
+         <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="breathlessness" id="breathlessnessCheckbox">
+           <label class="form-check-label" for="breathlessnessCheckbox">Breathlessness</label>
+          </div>
+         </div>
+        <div class="form-group">
+         <label for="travelInput"><b>Have you travelled in the last 14 days?</b></label>
+          <div class="form-check">
+           <input class="form-check-input" type="radio" name="travelRadio" id="travelYes">
+            <label class="form-check-label" for="travelYesRadio">Yes</label>
+           </div>
+          <div class="form-check">
+         <input class="form-check-input" type="radio" name="travelRadio" id="travelNoRadio" value="no">
+        <label class="form-check-label" for="travelNoRadio">No</label>
+         </div>
+        </div>
+       <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+  </div>
+	  <!-- Bootstrap JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
