@@ -1,0 +1,134 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{
+    font-family: "Berlin Sans FB",sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+body{
+	background: #000000;
+	color: #fff;
+}
+.header{
+	width: 100%;
+	height: 100vh;
+	background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url('https://s.yimg.com/ny/api/res/1.2/phha8dWnlJXPOA7fsaBoog--/YXBwaWQ9aGlnaGxhbmRlcjt3PTY0MDtoPTM2MA--/https://media.zenfs.com/en/homerun/feed_manager_auto_publish_494/641e70104db924099f14635372e89717');
+	background-size: cover;
+	background-position: center;
+	padding: 10px 8%;
+	position: relative;
+}
+nav{
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding: 10px 0;
+}
+nav button{
+border: 0;
+outline: 0;
+background: #db0001;
+color: #fff;
+padding: 7px 20px;
+font-size: 12px;
+border-radius: 4px;
+margin-left: 10px;
+cursor: pointer;
+}
+.header-content{
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+text-align: center;
+margin-top: 100px;
+}
+.header-content h1{
+font-size: 50px;
+line-height: 60px;
+font-weight: 500;
+max-width: 650px;
+
+}
+.header-content h3{
+	font-weight: 500;
+	margin-bottom: 10px;
+}
+.email-signup{
+background: #fff;
+border-radius: 4px;
+display: flex;
+align-items: center;
+margin-top: 30px;
+overflow: hidden;
+}
+.email-signup input{
+	flex: 0;
+	border: 0;
+	outline: 0;
+	margin-left: 30px;
+}
+
+.email-signup button{
+	background: #db0001;
+	border: 0;
+	outline: 0;
+	color: #fff;
+	font-size: 16px;
+	cursor: pointer;
+	margin-left: 500px;
+	padding: 15px 30px;
+}
+.features{
+	padding: 50px 12%;
+	font-size: 22px;
+}
+.row{
+display: flex;
+width: 100%;
+align-items: center;
+flex-wrap: wrap;
+padding: 50px 0;
+}
+.text-col{
+	flex-basis: 50%;
+	margin-bottom: 20px;
+}
+.img-col{
+	flex-basis: 50%;
+	margin-bottom: 20px;
+}
+.img-col img{
+	display: block;
+	width: 90%;
+	margin: auto;
+}
+.features h2 {
+	font-size: 50px;
+	font-weight: 600;
+	margin-bottom: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
