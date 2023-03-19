@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+
+.button {
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 2px 2px;
+  cursor: pointer;
+}
+
+.button1 {
+	background-color: #DC3535;
+}
+
+.button2 {
+	background-color: #B01E68;
+} 
+
+section{
+	position: relative;
+	width: 100%;
+	min-height: 100vh;
+	padding: 100px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background: #E7B10A;
+	transition: 0.5s;
+}
+
+header{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding: 20px 100px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+header .logo{
+	position: relative;
+	max-width: 80px;
+}
+
+header ul{
+	position: relative;
+	display: flex;
+}
+
+header ul li{
+	list-style: none;
+}
+
+header ul li a{
+	display: inline-block;
+	color: #fff;
+	font-weight: 400;
+	margin-left: 40px;
+	text-decoration: none;
+}
+
+.content{
+	position: relative;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.content .textBox{
+	position: relative;
+	max-width: 600px;
+}
+
+.content .textBox h2{
+	color: #fff;
+	font-size: 4em;
+	line-height: 1.5em;
+	font-weight: 900;
+	text-transform: uppercase;
+}
+
+.content .textBox h2 span{
+	font-size: 2em;
+}
+
+.content .textBox p{
+	color: #fff;
+}
+
+.content .imgBox{
+	width: 600px;
+	display: flex;
+	padding-right: 50px;
+	margin-top: 50px;
+	justify-content: flex-end;
+}
+
+.content .imgBox img{
+	max-width: 260px;
+}
+
+.thumb{
+	position: absolute;
+	left: 50%;
+	bottom: 20px;
+	transform: translateX(-50%);
+	display: flex;
+}
+
+.thumb li{
+	list-style: none;
+	display: inline-block;
+	margin: 0 20px;
+	cursor: pointer;
+	transition: 0.5s;
+}
+
+.thumb li:hover{
+	transform: translateY(-15px);
+}
+
+.thumb li img{
+	max-width: 40px;
+}
+
+.thumb .textBox1 h2{
+	color: #fff;
+	font-size: 4em;
+	line-height: 1.5em;
+	font-weight: 900;
+	text-transform: uppercase;
+}
+
+.sci {
+	position: absolute;
+	top: 50%;
+	right: 30px;
+	transform: translateY(-50%);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.sci li{
+	list-style: none;
+}
+
+.sci li a{
+	display: inline-block;
+	filter: invert(1);
+	margin: 5px 0;
+	transform: scale(0.6);
+}
+
+@media (max-width: 1200px) {
+  section {
+    padding: 80px 40px;
+  }
+}
+
+@media (max-width: 960px) {
+  header {
+    padding: 20px 40px;
+  }
+  
+  header .logo {
+    max-width: 60px;
+  }
+  
+  header ul li a {
+    margin-left: 30px;
+  }
+  
+  .content {
+    flex-direction: column-reverse;
+  }
+  
+  .content .imgBox {
+    width: 100%;
+    justify-content: center;
+    padding-right: 0;
+    margin-top: 30px;
+  }
+  
+  .content .imgBox img {
+    max-width: 220px;
+  }
+  
+  .content .textBox {
+    max-width: 100%;
+  }
+  
+  .content .textBox h2 {
+    font-size: 2.5em;
+    line-height: 1.2em;
+  }
+  
+  .thumb {
+    display: none;
+  }
+  
+  .sci {
+    position: static;
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  header ul {
+    display: none;
+  }
+  
+  header .logo {
+    max-width: 50px;
+  }
+  
+  #menu-icon {
+    display: block;
+    color: #fff;
+    font-size: 2em;
+    cursor: pointer;
+  }
+  
+  header .navbar {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    background: #2b2640;
+    padding: 20px;
+    display: none;
+  }
+  
+  header .navbar.active {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  header .navbar a {
+    margin: 10px 0;
+    font-size: 1.2em;
+    display: block;
+  }
+  
+  .sci li a {
+    margin: 10px 0;
+    transform: scale(0.8);
+  }
+  
+  .content .textBox h2 {
+    font-size: 2em;
+    line-height: 1.2em;
+  }
+  
+  .content .textBox p {
+    font-size: 0.9em;
+  }
+  
+  .thumb li img {
+    max-width: 30px;
+  }
+}

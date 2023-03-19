@@ -1,0 +1,138 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Dosis:wght@800&family=Josefin+Sans:wght@100;200;300;400;500;600;700&family=Poppins:wght@600&display=swap" rel="stylesheet">
+	
+<link rel="stylesheet" type="text/css" href="style.css">
+	
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">	
+<link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+	
+<title>Theme 4 | Erispe</title>
+	
+<link
+</head>
+
+<body>
+	
+	<div class="container1">
+		<ul>
+			<li><a href="#"><i class='bx bxs-home'></i>HOME</a></li>
+			<li><a href="#"><i class='bx bx-user'></i>REGISTER</a></li>
+			<li><a href="#"><i class='bx bx-user-plus'></i>SIGN IN</a></li>
+			<li><a href="#"><i class='bx bxs-contact'></i>CONTACT</a></li>
+			<li><a href="#"><i class='bx bx-question-mark'></i>ABOUT US</a></li>
+		</ul>
+	</div>
+	
+	<section>
+		<img src="img/bg.jpg" id="first">
+		<img src="img/netflix.png" id="last">
+		<h1 id="text">NETFLIX</h1>
+	</section>
+	
+	<div class="ab-text">
+		<div class="heading">
+			<h2> NETFLIX </h2>
+			<p>Netflix is a subscription-based streaming service that allows our members to watch TV shows and movies on an internet-connected device. <br> Depending on your plan, you can also download TV shows and movies to your iOS, Android, or Windows 10 device and watch without an internet connection.</p>
+		</div>
+		
+		<div class="container">
+			<div class="box box1">
+				<div class="in">
+					<p>Barbie Movies</p>
+				</div>
+			</div>
+			
+			<div class="box box2">
+				<div class="in">
+					<p>Minion Movies</p>
+				</div>
+			</div>
+			
+			<div class="box box3">
+				<div class="in">
+					<p>Encanto</p>
+				</div>
+			</div>
+			
+			<div class="box box4">
+				<div class="in">
+					<p>Paw Patrol</p>
+				</div>
+			</div>
+			
+			<div class="box box5">
+				<div class="in">
+					<p>An Inconvinient Love</p>
+				</div>
+			</div>
+			
+			<div class="box box6">
+				<div class="in">
+					<p>He's Into Her</p>
+				</div>
+			</div>
+			
+			<div class="box box7">
+				<div class="in">
+					<p>Love is Colorblind</p>
+				</div>
+			</div>
+			
+			<div class="box box8">
+				<div class="in">
+					<p>The Hows of Us</p>
+				</div>
+			</div>
+			
+			<div class="box box9">
+				<div class="in">
+					<p>Hello, Love, Goodbye</p>
+				</div>
+			</div>
+			
+			<div class="box box10">
+				<div class="in">
+					<p>Barcelona: Love Untold</p>
+				</div>
+			</div>
+			
+			<div class="box box11">
+				<div class="in">
+					<p>The Greatest Showman</p>
+				</div>
+			</div>
+			
+			<div class="box box12">
+				<div class="in">
+					<p>Lyric and Beat</p>
+				</div>
+			</div>
+			
+		</div>
+		
+		<div class="bottom">
+			<p> 2022. Erispe, Mica Allana P. </p>
+		</div>
+	</div>
+	
+	<script>
+		let first = document.getElementById("first");
+		let last = document.getElementById("last");
+		let text = document.getElementById("text");
+		
+		window.addEventListener('scroll', function() {
+			var value = window.scrollY;
+								
+			first.style.top = value * 0.7 + 'px';
+			last.style.bottom = value * 0.5 + 'px';
+			text.style.top = value * 1 + 'px';
+		})
+	</script>
+</body>
+</html>

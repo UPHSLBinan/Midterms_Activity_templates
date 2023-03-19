@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Theme 3 | Erispe</title>
+<link rel="stylesheet" href="shein.css">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+</head>
+
+<body>
+	<section class="sec">
+		<header>
+			<a href="index.html"><img src="img/logo.png" class="logo"></a>
+			<ul>
+				<li><a href="index.html"><button class="button button1">Home</button></a></li>
+				<li><a href="#"><button class="button button2">Products</button></a></li>
+				<li><a href="#"><button class="button button1">What's New</button></a></li>
+				<li><a href="#"><button class="button button2">Newsletter</button></a></li>
+				<li><a href="#"><button class="button button1">Contact</button></a></li>
+			</ul>
+		</header>
+		<div class="content">
+			<div class="textBox">
+				<h2>I love<br><span>shein!</span></h2>
+				<p>Shein is a Chinese online fast fashion retailer headquartered in Singapore. Founded in Nanjing in October 2008 as ZZKKO by entrepreneur Chris Xu, Shein grew to become the world's largest fashion retailer as of 2022.</p>
+				<a href="#">View all products</a>
+			</div>
+			
+			<div class="imgBox">
+				<img src="img/shein.png" class="shein">
+			</div>
+		</div>
+		<ul class="thumb">
+			<li><a href="shopee.html"><img src="img/shopee.png" onclick="img/imgSlider('shopee.png'); changeBgColor('#F49D1A')"></a></li>
+			<li><a href="shein.html"><img src="img/shein.png" onclick="img/imgSlider('shein.png'); changeBgColor('#2C3333')"></a></li>
+			<li><a href="lazada.html"><img src="img/lazada.png" onclick="img/imgSlider('lazada.png'); changeBgColor('#1746A2')"></a></li>
+		</ul>
+		
+		<ul class="sci">
+			<li><a href="#"><img src=img/facebook.png></a></li>
+			<li><a href="#"><img src=img/instagram.png></a></li>
+			<li><a href="#"><img src=img/twitter.png></a></li>
+		</ul>
+		<script type="text/javascript">
+			function imgSlider(anything) {
+				document.querySelector('.shein').src = anything;
+			}
+			
+			function changeBgColor(color){
+				const sec = document.querySelector('.sec');
+				sec.style.background = color;
+			}
+		</script>
+</body>
+</html>
