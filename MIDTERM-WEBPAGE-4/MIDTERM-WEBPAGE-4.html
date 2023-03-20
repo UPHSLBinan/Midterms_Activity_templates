@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link href="https://fonts.googleapis.com/css?family=RobotoDraft" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"><style>
+html,body,h1,h2,h3,h4,h5 {font-family: "RobotoDraft", "Roboto", sans-serif}
+.w3-bar-block .w3-bar-item {padding: 16px}
+	
+	
+</style>
+</head>
+<body style="background-color:powderblue;">
+
+<!-- Side Navigation -->
+<nav class="w3-sidebar w3-bar-block w3-collapse w3-white w3-animate-left w3-card" style="z-index:3;width:320px;" id="mySidebar">
+  
+  <a href="javascript:void(0)" onclick="w3_close()" title="Close Sidemenu" 
+  class="w3-bar-item w3-button w3-hide-large w3-large">Close <i class="fa fa-remove"></i></a>
+  <a href="javascript:void(0)" class="w3-bar-item w3-button w3-dark-grey w3-button w3-hover-black w3-left-align" onclick="document.getElementById('id01').style.display='block'">New Message <i class="w3-padding fa fa-pencil"></i></a>
+  <a id="myBtn" onclick="myFunc('Demo1')" href="javascript:void(0)" class="w3-bar-item w3-button"><i class="fa fa-inbox w3-margin-right"></i>Inbox (3)<i class="fa fa-caret-down w3-margin-left"></i></a>
+  <div id="Demo1" class="w3-hide w3-animate-left">
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-border-bottom test w3-hover-light-grey" onclick="openMail('Borge');w3_close();" id="firstTab">
+      <div class="w3-container" table style="background-color:#D1C7C7">
+        <img class="w3-round w3-margin-right" src="244116709_2010380842460120_5226971493146136571_n.jpg" style="width:50%;"><span class="w3-opacity w3-large">Kitz Joveres</span>
+        <h6>Subject: Remember Me</h6>
+        <p>Hello, i just wanted to let you know that i'll be home at...</p>
+    </div>
+    </a>
+     <a href="javascript:void(0)" class="w3-bar-item w3-button w3-border-bottom test w3-hover-light-grey" onclick="openMail('Jane');w3_close();">
+      <div class="w3-container" table style="background-color:#D1C7C7">
+        <img class="w3-round w3-margin-right" src="jc.jpg" style="width:50%;"><span class="w3-opacity w3-large">JC REYES</span>
+        <p>Wanna grab a BEER? ...</p>
+      </div>
+    </a>
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-border-bottom test w3-hover-light-grey" onclick="openMail('John');w3_close();">
+      <div class="w3-container" table style="background-color:#D1C7C7">
+        <img class="w3-round w3-margin-right" src="karina v.jpg" style="width:50%;"><span class="w3-opacity w3-large">Karina V</span>
+        <p>Welcome!</p>
+      </div>
+    </a>
+  </div>
+  <a href="#" class="w3-bar-item w3-button"><i class="fa fa-paper-plane w3-margin-right"></i>Sent</a>
+  <a href="#" class="w3-bar-item w3-button"><i class="fa fa-hourglass-end w3-margin-right"></i>Drafts</a>
+  <a href="#" class="w3-bar-item w3-button"><i class="fa fa-trash w3-margin-right"></i>Trash</a>
+</nav>
+
+<!-- Modal that pops up when you click on "New Message" -->
+<div id="id01" class="w3-modal" style="z-index:4">
+  <div class="w3-modal-content w3-animate-zoom">
+    <div class="w3-container w3-padding w3-red">
+       <span onclick="document.getElementById('id01').style.display='none'"
+       class="w3-button w3-red w3-right w3-xxlarge"><i class="fa fa-remove"></i></span>
+      <h2>Send Mail</h2>
+    </div>
+    <div class="w3-panel">
+      <label>To</label>
+      <input class="w3-input w3-border w3-margin-bottom" type="text">
+      <label>From</label>
+      <input class="w3-input w3-border w3-margin-bottom" type="text">
+      <label>Subject</label>
+      <input class="w3-input w3-border w3-margin-bottom" type="text">
+      <input class="w3-input w3-border w3-margin-bottom" style="height:150px" placeholder="What's on your mind?">
+      <div class="w3-section">
+
+        <a class="w3-button w3-red" onclick="document.getElementById('id01').style.display='none'">Cancel  <i class="fa fa-remove"></i></a>
+        <a class="w3-button w3-light-grey w3-right" onclick="document.getElementById('id01').style.display='none'">Send  <i class="fa fa-paper-plane"></i></a> 
+      </div>    
+    </div>
+  </div>
+</div>
+
+<!-- Overlay effect when opening the side navigation on small screens -->
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="Close Sidemenu" id="myOverlay"></div>
+
+<!-- Page content -->
+<div class="w3-main" style="margin-left:320px;">
+<i class="fa fa-bars w3-button w3-white w3-hide-large w3-xlarge w3-margin-left w3-margin-top" onclick="w3_open()"></i>
+<a href="javascript:void(0)" class="w3-hide-large w3-red w3-button w3-right w3-margin-top w3-margin-right" onclick="document.getElementById('id01').style.display='block'"><i class="fa fa-pencil"></i></a>
+
+<div id="Borge" class="w3-container person">
+  <br>
+  <img class="w3-round  w3-animate-top" src="244116709_2010380842460120_5226971493146136571_n.jpg" style="width:20%;">
+  <h5 class="w3-opacity">Subject: We gonna be RICH!</h5>
+  <h4><i class="fa fa-clock-o"></i> From Kitz Joveres, Oct 27, 2023.</h4>
+  <a class="w3-button w3-light-grey" href="#">Reply<i class="w3-margin-left fa fa-mail-reply"></i></a>
+  <a class="w3-button w3-light-grey" href="#">Forward<i class="w3-margin-left fa fa-arrow-right"></i></a>
+	<a class="w3-button w3-light-grey" href="#">Move<i class="w3-margin-left fa fa-mail-reply"></i></a>
+	<a class="w3-button w3-light-grey" href="#">Delete<i class="w3-margin-left fa fa-mail-reply"></i></a>
+  <hr>
+  <p></p>
+  <p>The National Basketball Association (NBA) is a professional basketball league consisting of 30 teams in North America. Founded in 1946, the NBA has become one of the most popular and widely recognized sports leagues in the world, showcasing some of the most talented athletes on the planet. The league's regular season typically runs from October to April, with playoffs taking place from April to June. The NBA is known for its high-flying dunks, incredible shooting displays, and intense rivalries between teams and players. With superstars like LeBron James, Steph Curry, and Kevin Durant leading the way, the NBA continues to captivate basketball fans all around the globe.</p>
+  <p>Best Regards, <br>Borge Refsnes</p>
+</div>
+
+<div id="Jane" class="w3-container person">
+  <br>
+  <img class="w3-round w3-animate-top" src="jc.jpg" style="width:20%;">
+  <h5 class="w3-opacity">Subject: About Global Warming</h5>
+  <h4><i class="fa fa-clock-o"></i> From Kyle Joveres, Aug 25, 2023.</h4>
+  <a class="w3-button w3-light-grey">Reply<i class="w3-margin-left fa fa-mail-reply"></i></a>
+  <a class="w3-button w3-light-grey">Forward<i class="w3-margin-left fa fa-arrow-right"></i></a>
+	<a class="w3-button w3-light-grey" href="#">Move<i class="w3-margin-left fa fa-mail-reply"></i></a>
+	<a class="w3-button w3-light-grey" href="#">Delete<i class="w3-margin-left fa fa-mail-reply"></i></a>
+  <hr>
+  <p>.</p>
+  <p>Global warming is a phenomenon that refers to the gradual increase in the Earth's average surface temperature due to the emission of greenhouse gases, primarily carbon dioxide, into the atmosphere. These gases trap heat from the sun and prevent it from escaping into space, resulting in a gradual rise in temperature. The effects of global warming are widespread and far-reaching, including rising sea levels, more frequent and severe weather events, and changes in ecosystems and wildlife habitats. Scientists have concluded that human activities, such as burning fossil fuels for energy, deforestation, and industrial processes, are the primary drivers of global warming. While the effects of global warming are already being felt in many parts of the world, there is still hope for mitigation through reducing greenhouse gas emissions and adopting sustainable practices to protect our planet for future generations.<br>Kyle</p>
+</div>
+
+<div id="John" class="w3-container person">
+  <br>
+  <img class="w3-round w3-animate-top" src="karina v.jpg" style="width:20%;">
+  <h5 class="w3-opacity">Subject: ABOUT BUSINESS</h5>
+  <h4><i class="fa fa-clock-o"></i> From Karina V, Sep 23, 2023.</h4>
+  <a class="w3-button w3-light-grey">Reply<i class="w3-margin-left fa fa-mail-reply"></i></a>
+  <a class="w3-button w3-light-grey">Forward<i class="w3-margin-left fa fa-arrow-right"></i></a>
+	<a class="w3-button w3-light-grey" href="#">Move<i class="w3-margin-left fa fa-mail-reply"></i></a>
+	<a class="w3-button w3-light-grey" href="#">Delete<i class="w3-margin-left fa fa-mail-reply"></i></a>
+  <hr>
+  <p>Welcome.</p>
+  <p>That's it!</p>
+</div>
+     
+</div>
+
+<script>
+var openInbox = document.getElementById("myBtn");
+openInbox.click();
+
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+function myFunc(id) {
+  var x = document.getElementById(id);
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show"; 
+    x.previousElementSibling.className += " w3-red";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+    x.previousElementSibling.className = 
+    x.previousElementSibling.className.replace(" w3-red", "");
+  }
+}
+
+openMail("Borge")
+function openMail(personName) {
+  var i;
+  var x = document.getElementsByClassName("person");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  x = document.getElementsByClassName("test");
+  for (i = 0; i < x.length; i++) {
+    x[i].className = x[i].className.replace(" w3-light-grey", "");
+  }
+  document.getElementById(personName).style.display = "block";
+  event.currentTarget.className += " w3-light-grey";
+}
+</script>
+
+<script>
+var openTab = document.getElementById("firstTab");
+openTab.click();
+</script>
+
+</body>
+</html> 
