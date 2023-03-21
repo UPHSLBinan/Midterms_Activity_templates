@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Growtopia</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style>
+		/* Parallax container */
+		.parallax {
+			background-image: url('bgpb.png');
+			background-attachment: fixed;
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+			height: 100vh;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			text-align: center;
+			color: white;
+			font-size: 4em;
+			font-weight: bold;
+			text-shadow: 2px 2px 4px #000000;
+		}
+
+		/* Parallax content */
+		.parallax-content {
+			background-color: rgba(0,0,0,0.5);
+			padding: 20px;
+			margin: 0 20px;
+			border-radius: 10px;
+		}
+
+		/* Scroll indicator */
+		.scroll-indicator {
+			position: absolute;
+			left: 50%;
+			bottom: 20px;
+			transform: translateX(-50%);
+			color: white;
+			font-size: 2em;
+			cursor: pointer;
+			animation: bounce 2s infinite;
+		}
+
+		/* Scroll animation */
+		@keyframes bounce {
+			0% { bottom: 20px; }
+			50% { bottom: 40px; }
+			100% { bottom: 20px; }
+		}
+
+		/* Second section */
+		.section {
+			background-color: #f2f2f2;
+			height: 100vh;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			text-align: center;
+			font-size: 3em;
+			font-weight: bold;
+		}
+		
+     .row {
+       display: flex;
+       flex-wrap: wrap;
+       }
+
+     .item {
+       flex: 1;
+       margin: 10px;
+       background-color: #ccc;
+       text-align: center;
+       padding: 20px;
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+     }
+
+     .item img {
+       max-width: 100%;
+       align-self: center;
+     }
+
+@media (max-width: 768px) {
+  .row {
+    flex-direction: column;
+  }
+}
+
+.game-mechanics {
+  text-align: center;
+  font-size: 24px;
+}
+	</style>
+</head>
+<body>
+	<header class="parallax">
+		<div class="parallax-content">
+			<h1>Welcome to Growtopia</h1>
+			<p>Explore about the game</p>
+		</div>
+		<div class="scroll-indicator">&#8595;</div>
+	</header>
+	<main class="game-mechanics" style="background-image: url('gtparallax.jpg');">
+		<div style="color: white";>
+		<h2>Game Mechanics</h2>
+		<p>Check out these three main things you can do in the game.</p>
+		</div>
+		<div class="row">
+     <div class="item">
+  <img src="punch.jpg" alt="Image 1">
+  <p style="font-weight: bold;">Punch</p>
+  <p>Growtopia Punch is a popular item in the Growtopia game that allows players to break blocks and punch other players in the game. When equipped, the player can use the punch action to destroy blocks in the game world, allowing them to harvest resources and create new structures. The punch action can also be used to attack and defend against other players in the game.</p>
+</div>
+<div class="item">
+  <img src="build.png" alt="Image 2">
+  <p style="font-weight: bold;">Build</p>
+  <p>Growtopia Build is a game mechanic in the Growtopia game that allows players to create and design their own unique worlds within the game. Using a variety of blocks, items, and decorations, players can create anything from a small house to a sprawling city, limited only by their imagination and creativity.</p>
+</div>
+<div class="item">
+  <img src="grow.png" alt="Image 3">
+  <p style="font-weight: bold;">Grow</p>
+  <p>Grow is a game mechanic in the Growtopia game that allows players to cultivate and harvest a variety of plants and trees within the game world. Players can obtain seeds and plant them in soil blocks, which can then be watered and tended to in order to help them grow.</p>
+</div>
+</div>
+	</main>
+</body>
+</html>

@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Dragon Raja</title>
+	<style>
+		body {
+			margin: 0;
+			padding: 0;
+			font-family: 'Open Sans', sans-serif;
+			color: #fff;
+			background-color: #333;
+		}
+
+		.container {
+			position: relative;
+			height: 100vh;
+			overflow: hidden;
+			background-image: url('dragonrajabg3.png');
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-position: center center;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+		}
+
+		.game {
+   			position: relative;
+    			height: 100vh;
+    			display: flex;
+    			
+    			justify-content: center;
+    			background-image: url('adsdragonraja.jpg');
+    			background-size: cover;
+    			background-position: center;
+		}
+		.game .overlay {
+			position: absolute;
+			top: 0;
+			left: 0;
+			height: 100%;
+			width: 100%;
+			background-color: rgba(0,0,0,0.6);
+			z-index: 1;
+		}
+
+		.game .overlay h1 {
+			font-size: 5rem;
+			text-align: center;
+			margin-top: 0;
+			z-index: 2;
+		}
+
+		.game .overlay p {
+			font-size: 2rem;
+			
+			margin-top: 2rem;
+			z-index: 2;
+		}
+
+		.parallax {
+			position: relative;
+			height: 100vh;
+			background-attachment: fixed;
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+
+		.parallax .content {
+			position: relative;
+			z-index: 2;
+			text-align: center;
+		}
+
+		.parallax .bg {
+			position: absolute;
+			top: 0;
+			left: 0;
+			height: 100%;
+			width: 100%;
+			background-attachment: fixed;
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-image: url('dragonrajabg.png');
+			background-position: center center;
+			filter: blur(5px);
+			z-index: 1;
+		}
+		
+		}
+
+		h1 {
+			font-size: 5rem;
+			margin: 0;
+			padding: 0;
+		}
+
+		p {
+			font-size: 2rem;
+			margin: 2rem 0 0 0;
+			padding: 0;
+		}
+
+		.btn {
+			display: inline-block;
+			padding: 1rem 2rem;
+			font-size: 2rem;
+			background-color: #fff;
+			color: #333;
+			border: none;
+			border-radius: 2rem;
+			margin-top: 2rem;
+			cursor: pointer;
+			transition: all 0.3s ease-in-out;
+		}
+
+		.btn:hover {
+			background-color: #333;
+			color: #fff;
+		}
+	</style>
+</head>
+<body>
+	
+		<nav>
+		<a class="active" href="#">Home</a>
+		<a href="#">About</a>
+		<a href="#">Services</a>
+		<a href="#">Contact</a>
+	</nav>
+	<div class="container">
+		<h1></h1>
+	
+		<p style="font-size: 50px; font-weight: bold;">READ TO FACE THE NEW WORLD?</p>
+	</div>
+
+	<div class="game">
+	<div style="float:right;"class="overlay">
+		<h1>The Game</h1>
+		<div style="float:right;">
+		<h2>This game will be available at "App Store" and "Google Play"</h2>
+		<p>Developed with the most established and industry-leading<br>
+		engine UE4, Dragon Raja is an incredible fantasy MMORPG.<br>
+		The game has a grand open world waiting for you to freely explore.<br>
+		With the customized avatar and innovative career system, it's time<br>
+		to enjoy a unique gaming experience.</p>
+</div>
+	</div>
+</div>
+<div class="parallax" style="background-image: url('dragonrajabg.png');">
+	<div class="bg"></div>
+	<div class="content">
+	<div style="background-color: rgba(255, 255, 255, 0.4); width:100%; padding: 20%; border-radius: 15px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);">
+		<h1>Learn About the Game</h1>
+		<p>Click learn more for Details</p>
+		<button class="btn">Learn More</button>
+	</div>
+	</div>
+</div>
+
+<div class="container">
+	<h1>Register Account</h1>
+	<form action="/register" method="POST">
+		<label for="first-name">First Name:</label>
+		<input type="text" id="first-name" name="first-name" required>
+
+		<label for="last-name">Last Name:</label>
+		<input type="text" id="last-name" name="last-name" required>
+
+		<label for="email">Email:</label>
+		<input type="email" id="email" name="email" required>
+
+		<label for="username">Username:</label>
+		<input type="text" id="username" name="username" required>
+
+		<label for="password">Password:</label>
+		<input type="password" id="password" name="password" required>
+
+		<label for="confirm-password">Confirm Password:</label>
+		<input type="password" id="confirm-password" name="confirm-password" required>
+
+		<label for="gender">Gender:</label>
+		<select id="gender" name="gender" required>
+			<option value="">Select gender</option>
+			<option value="male">Male</option>
+			<option value="female">Female</option>
+			<option value="other">Other</option>
+		</select>
+
+		<label for="dob">Date of Birth:</label>
+		<input type="date" id="dob" name="dob" required>
+
+		<button type="submit">Register</button>
+	</form>
+</div>
+</div>
+
+<style>
+
+    nav {
+			background-color: #333;
+			overflow: hidden;
+		}
+
+		nav a {
+			float: left;
+			display: block;
+			color: white;
+			text-align: center;
+			padding: 14px 16px;
+			text-decoration: none;
+		}
+
+		nav a:hover {
+			background-color: #ddd;
+			color: black;
+		}
+
+		.active {
+			background-color: purple;
+			color: white;
+		}
+    .container {
+        position: relative;
+        height: 100vh;
+        overflow: hidden;
+        background-image: url('dragonrajabg3.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    form {
+        background-color: white;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    label {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: bold;
+        color: black;
+    }
+
+    input {
+        padding: 10px;
+        margin-bottom: 10px;
+        border-radius: 5px;
+        border: none;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    button {
+        background-color: #0077ff;
+        color: white;
+        padding: 10px 20px;
+        border-radius: 5px;
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.2s ease;
+    }
+
+    button:hover {
+        background-color: #005ae6;
+    }
+</style>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+	$(document).ready(function(){
+		$(window).scroll(function(){
+			$('.parallax').css('background-position', 'center ' + $(window).scrollTop() / 2 + 'px');
+		});
+	});
+</script>
+</body>
+</html>

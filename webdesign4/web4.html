@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Cafe Menu</title>
+	<!-- Material Design CSS -->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+	<!-- Custom CSS -->
+	<style>
+		nav {
+			background-color: black;
+			color: #444;
+		}
+
+		nav a {
+			color: #444;
+		}
+
+		nav ul li.active a {
+			color: #000;
+			background-color: #fff;
+		}
+
+		.menu-section {
+			margin-top: 50px;
+			margin-bottom: 50px;
+		}
+
+		.menu-item {
+			display: flex;
+			flex-wrap: wrap;
+			align-items: center;
+			margin-bottom: 30px;
+			padding-bottom: 20px;
+			border-bottom: 1px solid #ccc;
+		}
+
+		.menu-item img {
+			max-width: 100%;
+			margin-right: 20px;
+		}
+
+		.menu-item h4 {
+			margin: 0;
+			font-weight: bold;
+		}
+
+		.menu-item p {
+			margin: 0;
+			font-size: 1.1rem;
+		}
+		/* style the navigation menu */
+.sidenav {
+  list-style-type: none; /* remove bullet points from list */
+  margin: 0;
+  padding: 0;
+  background-color: #333; /* set background color */
+  overflow: hidden; /* hide any overflowing content */
+}
+
+/* style the individual menu items */
+.sidenav li {
+  float: left; /* float the list items to the left */
+}
+
+/* style the links within the menu items */
+.sidenav li a {
+  display: block; /* make the links block level elements */
+  color: white; /* set text color */
+  text-align: center; /* center the text within the block element */
+  padding: 16px; /* add some padding around the links */
+  text-decoration: none; /* remove underline from links */
+}
+
+/* change the link color when hovered over */
+.sidenav li a:hover {
+  background-color: #111; /* set background color on hover */
+}
+	</style>
+</head>
+<body>
+	<!-- Navigation Bar -->
+	<nav>
+		<div class="nav-wrapper">
+			<a href="#" class="brand-logo">Cafe Menu</a>
+			<a href="#" data-target="mobile-menu" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+			<ul class="right hide-on-med-and-down">
+				<li><a href="#">Home</a></li>
+				<li><a href="#">Menu</a></li>
+				<li><a href="#">About Us</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+		</div>
+	</nav>
+
+	<!-- Mobile Navigation Bar -->
+	<ul class="sidenav" id="mobile-menu">
+		<li><a href="#">Home</a></li>
+		<li><a href="#">Menu</a></li>
+		<li><a href="#">About Us</a></li>
+		<li><a href="#">Contact</a></li>
+	</ul>
+
+	<!-- Main Content -->
+	<main class="container">
+		<h2 class="center-align">Our Menu</h2>
+
+		<div class="row menu-section">
+			<div class="col s12 m6 l4">
+				<div class="menu-item">
+					<img src="coffee.jpg" alt="Coffee">
+					<div>
+						<h4>Coffee</h4>
+						<p>Our house blend of premium roasted coffee beans.</p>
+					</div>
+				</div>
+			</div>
+			<div class="col s12 m6 l4">
+				<div class="menu-item">
+					<img src="croissant.jpg" alt="Croissant">
+					<div>
+						<h4>Croissant</h4>
+						<p>A flaky, buttery croissant perfect for breakfast or a snack.</p>
+					</div>
+				</div>
+			</div>
+			<div class="col s12 m6l4">
+<div class="menu-item">
+<img src="sandwich.jpg" alt="Sandwich">
+<div>
+<h4>Sandwich</h4>
+<p>A delicious sandwich made with freshly baked bread and premium ingredients.</p>
+</div>
+</div>
+</div>
+<div class="col s12 m6 l4">
+<div class="menu-item">
+<img src="smoothie.jpg" alt="Smoothie">
+<div>
+<h4>Coffee Smoothie</h4>
+<p>A refreshing coffee blend, perfect for a hot day.</p>
+</div>
+</div>
+</div>
+<div class="col s12 m6 l4">
+<div class="menu-item">
+<img src="pancakes.jpg" alt="Pancakes">
+<div>
+<h4>Pancakes</h4>
+<p>Fluffy pancakes served with butter and maple syrup.</p>
+</div>
+</div>
+</div>
+<div class="col s12 m6 l4">
+<div class="menu-item">
+<img src="waffles.jpg" alt="Waffles">
+<div>
+<h4>Waffles</h4>
+<p>Golden brown waffles served with whipped cream and fruit compote.</p>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- Material Design JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<!-- Custom JS -->
+<script>
+	// Initialize Sidenav
+	document.addEventListener('DOMContentLoaded', function() {
+		var elems = document.querySelectorAll('.sidenav');
+		var instances = M.Sidenav.init(elems);
+	});
+</script>
+</body>
+</html>
