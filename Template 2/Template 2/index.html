@@ -1,0 +1,64 @@
+<!Doctype HTML>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial- scale=1.0">
+		<title> Gaming Peripherals</title>
+		<link rel="stylesheet" href="Style.css">
+	</head>
+	<body>
+		<div class="container">
+			<div class="navbar">
+				<img src="img/logo-main.png" class="logo">
+				<nav>
+					<ul id="menulist">
+						<li><a href="">Game Controllers</a></li>
+						<li><a href="">PC Peripherals</a></li>
+						<li><a href="">VR Peripherals</a></li>
+						<li><a href="">Others</a></li>
+					</ul>
+				</nav>
+				<img src="img/Menu.png" class="menu" onClick="togglemenu()">
+			</div>
+			
+			<div class="row">
+				<div class="col-1">
+					<h2>PS4 V2<br> Dualshock 4</h2>
+					<h3>Wireless Controller for PlayStation 4</h3>
+					<p>(Compatible/Generic)</p>
+					<h4>₱ 800.00</h4>
+					<button type="button">Order Now<img src="img/small-arrow.png"></button>
+				</div>
+				<div class="col-2">
+					<img src="img/ps4 controller.png" class="controller">
+					<div class="color-box"></div>
+					<div class="add-btn">
+						<img src="img/cart.png">
+						<p><small>Add to Cart</small></p>
+					</div>				
+				</div>
+			</div>
+			
+			<div class="social-links">
+				<img src="img/logo-facebook.png">
+				<img src="img/logo- instagram.png">
+				<img src="img/twitter-logo.png">
+			</div>
+		</div>
+		<script>
+			
+		var menulist = document.getElementById("menulist");
+			menulist.style.maxHeight = "0px";
+			function togglemenu(){
+				if(menulist.style.maxHeight == "0px")
+					{
+						menulist.style.maxHeight = "130px";
+					}
+				else
+				{
+					menulist.style.maxHeight = "0px";
+				}
+			}
+			
+		</script>
+	</body>
+</html>
