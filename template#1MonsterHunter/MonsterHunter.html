@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>MONSTERHUNTER</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>	
+		@import url('https://fonts.cdnfonts.com/css/monster-hunter');
+		.grid-container {
+			display: grid;
+			grid-template-columns: repeat(5, 1fr);
+			grid-gap: 10px;
+			padding: 10px;
+		}
+		.image-container {
+			position: relative;
+			display: block;
+			overflow: hidden;
+			padding: 0;
+			margin: 20px;
+			border-radius: 5px;
+			cursor: pointer;
+			transition: transform 0.3s ease-in-out;
+		}
+		.image-container img {
+			width: 100%;
+			height: auto;
+			vertical-align: middle;
+			border-style: none;
+			transition: transform 0.3s ease-in-out;
+		}
+
+		.overlay {
+			position: absolute;
+			top: 14%;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			opacity: 0;
+			background-color: rgba(0, 0, 0, 0.5);
+			color: white;
+			font-size: 14px;
+			font-family: 'Open Sans', sans-serif;
+			text-align: center;
+			padding: 8px;
+			box-sizing: border-box;
+			transition: opacity 0.3s ease-in-out;
+		}
+		.image-container:hover .overlay {
+			opacity: 1;
+		}
+
+		.image-container:hover img {
+			transform: scale(1.1);
+		}
+		.wrapper {
+			margin: 20px auto;
+			width: 70%;
+		}
+		.text-box {
+			color: #fff;
+		}
+		.text-box h2 {
+			font-size: 42px;
+		}
+		.text-box p {
+			font-size: 16px;
+		}
+}
+</style>
+</head>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-wide w3-padding w3-card">
+    <a href="#home" class="w3-bar-item w3-button" style="font-family: 'Monster Hunter',sans-serif; font-size: 15px;, text-align: center;">MONSTER HUNTER</a>
+    <!-- Float links to the right. Hide them on small screens -->
+    <div class="w3-right w3-hide-small">
+      <a href="#projects" class="w3-bar-item w3-button" style="font-family: 'Monster Hunter',sans-serif; font-size: 15px;, text-align: center;">MONSTERS</a>
+      <a href="#about" class="w3-bar-item w3-button" style="font-family: 'Monster Hunter',sans-serif; font-size: 15px;, text-align: center;">About</a>
+      <a href="#contact" class="w3-bar-item w3-button" style="font-family: 'Monster Hunter',sans-serif; font-size: 15px;, text-align: center;">Contact</a>
+    </div>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="w3-display-container w3-content w3-wide" style="max-width:1910px;" id="home">
+  <video autoplay muted loop id="myVideo">
+    <source src="mhw.mp4" type="video/mp4">
+  </video>
+  <div class="w3-display-middle w3-margin-top w3-center">
+    <img src="mhw.png" alt="Girl in a jacket" width="694" height="324">
+  </div>
+</header>
+<header class="w3-display-container w3-content w3-wide" style="max-width:1500px;" id="home">
+  <h1 style="font-family: 'Monster Hunter', sans-serif; text-align: center;">MONSTER HUNTER</h1>
+  <div class="wrapper">
+  <div class="text-box">
+  <img src="mhw.jpg" style="max-width: 600px; float: left; border: 3px solid #fff; border-radius: 10px; margin-right: 10px;">
+  <p style="font-family: 'Monster Hunter', sans-serif; text-align: center;">Battle gigantic monsters in epic locales.
+As a hunter, you'll take on quests to hunt monsters in a variety of habitats.
+Take down these monsters and receive materials that you can use to create stronger weapons and armor in order to hunt even more dangerous monsters.
+In Monster Hunter: World, the latest installment in the series, you can enjoy the ultimate hunting experience, using everything at your disposal to hunt monsters in a new world teeming with surprises and excitement.
+Once every decade, elder dragons trek across the sea to travel to the land known as the New World in a migration referred to as the Elder Crossing.
+To get to the bottom of this mysterious phenomenon, the Guild has formed the Research Commission, dispatching them in large fleets to the New World.
+As the Commission sends its Fifth Fleet in pursuit of the colossal elder dragon known as Zorah Magdaros, one hunter is about to embark on a journey grander than anything they could have ever imagined.
+</p>
+</div>
+  </div>
+</header>
+<!-- Page content -->
+<div class="w3-content w3-padding" style="max-width:1600px">
+
+  <!-- Project Section -->
+  <div class="w3-container w3-padding-32" id="projects">
+    <h1 class="w3-border-bottom w3-border-light-grey w3-padding-16" style="font-family: 'Monster Hunter', sans-serif; text-align: center;">Large Monsters</h1>
+  </div>
+<div class="grid-container">
+  <div class="image-container">
+    <h3 style="font-family: 'Monster Hunter', sans-serif; text-align: center;">Great Jagras</h3>
+    <img src="jagras.jpg" alt="Image 1">
+    <div class="overlay" style="font-family: 'Monster Hunter', sans-serif;">Highly resembling an iguana, this monster known as the "Thief Wyvern", 
+    this monster will attack and eat whole its prey.
+    <br><br>Species: Fanged Wyvern<br>locations: ancient forest<br>Effective Elements: Fire(3), Thunder(2), Ice(2), Dragon(1)
+    <br>Resistances: Water<br>Weak Points: Head, Chest, Forelegs
+  </div>
+  </div>
+  <div class="image-container">
+    <h3 style="font-family: 'Monster Hunter', sans-serif; text-align: center;">Kulu-Ya-Ku</h3>
+    <img src="Kulu-Ya-Ku.webp" alt="Image 2">
+    <div class="overlay" style="font-family: 'Monster Hunter', sans-serif;">This bird wyvern uses found boulders for protection from incoming attacks 
+    as well as to hurl at its enemies from a distance.
+    <br><br>Species: Bird Wyvern<br>locations: Ancient Forest, Wildspire Waste<br>Effective Elements: Water(3), Fire(2), Ice(2), Thunder(2), Dragon(2)
+    <br>Resistances: None<br>Weak Points: Head
+  </div>
+  </div>
+  <div class="image-container">
+    <h3 style="font-family: 'Monster Hunter', sans-serif; text-align: center;">Pukei-Pukei</h3>
+    <img src="Pukei-Pukei.webp" alt="Image 3">
+    <div class="overlay" style="font-family: 'Monster Hunter', sans-serif;">With a face that resembles a chameleon mixed with a frog, complete with extendable tongue,
+    Pukei-Pukei has a pair of green wings, covered in green scales that range across the color's spectrum. 
+    <br><br>Species: Bird Wyvern<br>locations: Ancient Forest, Wildspire Waste<br>Effective Elements: Thunder(3), Ice(2), Fire(2), Dragon(1)
+    <br>Resistances: Water<br>Weak Points: Head, Wings, Tail
+  </div>
+  </div>
+  <div class="image-container">
+    <h3 style="font-family: 'Monster Hunter', sans-serif; text-align: center;">Jyuratodus</h3>
+    <img src="Jyuratodus.webp" alt="Image 4">
+    <div class="overlay">Image 4</div>
+  </div>
+  <div class="image-container">
+    <h3 style="font-family: 'Monster Hunter', sans-serif; text-align: center;">Barroth</h3>
+    <img src="Barroth.webp" alt="Image 5">
+    <div class="overlay">Image 5</div>
+  </div>
+  <div class="image-container">
+    <h3 style="font-family: 'Monster Hunter', sans-serif; text-align: center;">Tobi-Kadachi</h3>
+    <img src="Tobi-Kadachi.webp" alt="Image 6">
+    <div class="overlay">Image 6</div>
+  </div>
+  <div class="image-container">
+    <h3 style="font-family: 'Monster Hunter', sans-serif; text-align: center;">Anjanath</h3>
+    <img src="Anjanath.webp" alt="Image 6">
+    <div class="overlay">Image 6</div>
+  </div>
+  <div class="image-container">
+    <h3 style="font-family: 'Monster Hunter', sans-serif; text-align: center;">Rathian</h3>
+    <img src="Rathian.webp" alt="Image 6">
+    <div class="overlay">Image 6</div>
+  </div>
+  <div class="image-container">
+    <h3 style="font-family: 'Monster Hunter', sans-serif; text-align: center;">Tzitzi-Ya-Ku</h3>
+    <img src="Tzitzi-Ya-Ku.webp" alt="Image 6">
+    <div class="overlay">Image 6</div>
+  </div>
+  <div class="image-container">
+    <h3 style="font-family: 'Monster Hunter', sans-serif; text-align: center;">Paolumu</h3>
+    <img src="Paolumu.webp" alt="Image 6">
+    <div class="overlay">Image 6</div>
+  </div>
+  <div class="image-container">
+    <h3 style="font-family: 'Monster Hunter', sans-serif; text-align: center;">Great Girros</h3>
+    <img src="Great_Girros.webp" alt="Image 6">
+    <div class="overlay">Image 6</div>
+  </div>
+  <div class="image-container">
+    <h3 style="font-family: 'Monster Hunter', sans-serif; text-align: center;">Radobaan</h3>
+    <img src="Radobaan.webp" alt="Image 6">
+    <div class="overlay">Image 6</div>
+  </div>
+  <div class="image-container">
+    <h3 style="font-family: 'Monster Hunter', sans-serif; text-align: center;">Legiana</h3>
+    <img src="Legiana.webp" alt="Image 6">
+    <div class="overlay">Image 6</div>
+  </div>
+  <div class="image-container">
+    <h3 style="font-family: 'Monster Hunter', sans-serif; text-align: center;">Odogaron</h3>
+    <img src="Odogaron.webp" alt="Image 6">
+    <div class="overlay">Image 6</div>
+  </div>
+  <div class="image-container">
+    <h3 style="font-family: 'Monster Hunter', sans-serif; text-align: center;">Rathalos</h3>
+    <img src="Rathalos.webp" alt="Image 6">
+    <div class="overlay">Image 6</div>
+  </div>
+  <div class="image-container">
+    <h3 style="font-family: 'Monster Hunter', sans-serif; text-align: center;">Diablos</h3>
+    <img src="Diablos.webp" alt="Image 6">
+    <div class="overlay">Image 6</div>
+  </div>
+  <div class="image-container">
+    <h3 style="font-family: 'Monster Hunter', sans-serif; text-align: center;">Zorah Magdaros</h3>
+    <img src="Zorah_Magdaros.webp" alt="Image 6">
+    <div class="overlay">Image 6</div>
+  </div>
+  <div class="image-container">
+    <h3 style="font-family: 'Monster Hunter', sans-serif; text-align: center;">Dodogama</h3>
+    <img src="Dodogama.webp" alt="Image 6">
+    <div class="overlay">Image 6</div>
+  </div>
+  <div class="image-container">
+    <h3 style="font-family: 'Monster Hunter', sans-serif; text-align: center;">Lavasioth</h3>
+    <img src="Lavasioth.webp" alt="Image 6">
+    <div class="overlay">Image 6</div>
+  </div>
+  <div class="image-container">
+    <h3 style="font-family: 'Monster Hunter', sans-serif; text-align: center;">Uragaan</h3>
+    <img src="Uragaan.webp" alt="Image 6">
+    <div class="overlay">Image 6</div>
+  </div>
+  <div class="image-container">
+    <h3 style="font-family: 'Monster Hunter', sans-serif; text-align: center;">Azure Rathalos</h3>
+    <img src="AzureRathalos.webp" alt="Image 6">
+    <div class="overlay">Image 6</div>
+  </div>
+  <div class="image-container">
+    <h3 style="font-family: 'Monster Hunter', sans-serif; text-align: center;">Bazelgeuse</h3>
+    <img src="Bazelgeuse.webp" alt="Image 6">
+    <div class="overlay">Image 6</div>
+  </div>
+  <div class="image-container">
+    <h3 style="font-family: 'Monster Hunter', sans-serif; text-align: center;">Black Diablos</h3>
+    <img src="Black_Diablos.webp" alt="Image 6">
+    <div class="overlay">Image 6</div>
+  </div>
+  <div class="image-container">
+    <h3 style="font-family: 'Monster Hunter', sans-serif; text-align: center;">Kirin</h3>
+    <img src="Kirin.webp" alt="Image 6">
+    <div class="overlay">Image 6</div>
+  </div>
+  <div class="image-container">
+    <h3 style="font-family: 'Monster Hunter', sans-serif; text-align: center;">Nergigante</h3>
+    <img src="Nergigante.webp" alt="Image 6">
+    <div class="overlay">Image 6</div>
+  </div>
+  <div class="image-container">
+    <h3 style="font-family: 'Monster Hunter', sans-serif; text-align: center;">Teostra</h3>
+    <img src="Teostra.webp" alt="Image 6">
+    <div class="overlay">Image 6</div>
+  </div>
+  <div class="image-container">
+    <h3 style="font-family: 'Monster Hunter', sans-serif; text-align: center;">Kushala Daora</h3>
+    <img src="Kushala_Daora.webp" alt="Image 6">
+    <div class="overlay">Image 6</div>
+  </div>
+  <div class="image-container">
+    <h3 style="font-family: 'Monster Hunter', sans-serif; text-align: center;">Deviljho</h3>
+    <img src="Deviljho.webp" alt="Image 6">
+    <div class="overlay">Image 6</div>
+  </div>
+  <div class="image-container">
+    <h3 style="font-family: 'Monster Hunter', sans-serif; text-align: center;">Vaal Hazak</h3>
+    <img src="Vaal_Hazak.webp" alt="Image 6">
+    <div class="overlay">Image 6</div>
+  </div>
+  <div class="image-container">
+    <h3 style="font-family: 'Monster Hunter', sans-serif; text-align: center;">Xeno'jiiva</h3>
+    <img src="Xeno'jiiva.webp" alt="Image 6">
+    <div class="overlay">Image 6</div>
+  </div>
+  <div class="image-container">
+    <h3 style="font-family: 'Monster Hunter', sans-serif; text-align: center;">Kulve Taroth</h3>
+    <img src="Kulve_Taroth.webp" alt="Image 6">
+    <div class="overlay">Image 6</div>
+  </div>
+  <div class="image-container">
+    <h3 style="font-family: 'Monster Hunter', sans-serif; text-align: center;">Lunastra</h3>
+    <img src="Lunastra.webp" alt="Image 6">
+    <div class="overlay">Image 6</div>
+  </div>
+  <div class="image-container">
+    <h3 style="font-family: 'Monster Hunter', sans-serif; text-align: center;">Behemoth</h3>
+    <img src="Behemoth.webp" alt="Image 6">
+    <div class="overlay">Image 6</div>
+  </div>
+</div>
+  
+
+  <!-- About Section -->
+  <div class="w3-container w3-padding-32" id="projects">
+    <h1 class="w3-border-bottom w3-border-light-grey w3-padding-16" style="font-family: 'Monster Hunter', sans-serif; text-align: center;">Locations</h1>
+    <h4 style="font-family: 'Monster Hunter', sans-serif; text-align: center;">There are five known maps in Monster Hunter World, plus one main town, Astera. Here, you'll find an index listing every area and their exclusive items. 
+    </h4>
+    <h1 style="font-family: 'Monster Hunter', sans-serif; text-align: center;">Astera</h1>
+    <div class="wrapper">
+    <div class="text-box">
+    <img src="astera.webp" style="max-width: 600px; float: left; border: 3px solid #fff; border-radius: 10px; margin-right: 10px;">
+    <h4 style="font-family: 'Monster Hunter', sans-serif; text-align: center;">With the Guild at it's core, the Research Commission was formed in order to solve the mystery of the Elder Crossings. The base of their research activities is here in Astera It has been forty years since the First Fleet arrived and established this as a major stronghold, which was built by the hands, skills, efforts, and labor of many people. 
+The First Fleet was deployed in pursuit of Kushala Daora. During a storm, the crew had a chance encounter with a mysterious Elder Dragon. The ship was split and tossed on top of a cliff, but it still eventually became a foothold for research projects. What's more, the waterfall flowing right below it turned out to be a stroke of good luck for the First Fleet.
+The First Fleet found it difficult to secure enough resources to upgrade their base at first and expanded the base by recycling their ship. They had no choice but to wait for further deployments to do any full-scale work, however, so they poured their efforts into reinforcing the ship atop the cliff.
+    </h4>
+    </div>
+    </div>
+    <h1 style="font-family: 'Monster Hunter', sans-serif; text-align: center;">Ancient Forest</h1>
+    <div class="wrapper">
+    <div class="text-box">
+    <img src="forest.webp" style="max-width: 600px; float: right; border: 3px solid #fff; border-radius: 15px; margin-left: 15px;">
+    <h4 style="font-family: 'Monster Hunter', sans-serif; text-align: center;">As the name implies, the Ancient Forest consists of a massive forest, but is also comprised of clearings close to the coast and a combination of cliffs and massive trees that creates a vast vertical space.
+Shorelines
+This section of the map is comprised of mid-sized grasslands surrounded by the forest, many groups of herbivores can be found here including Aptonoth and the New World's Kestodon, other monsters that frequent this area include Jagras, Great Jagras, Kulu-Ya-Ku and Anjanath, who wander around these parts in search of food.
+Lower Forest
+The lower forest is thick and lush with greenery, which provides the perfect environment for Pukei-Pukei to camouflage itself, Great Jagras, Tobi-Kadachi, Rathian and Anjanath also wander these parts, this is a great location for collecting plants and mushrooms and groups of Mosswine can be found, many sections of this area contain bodies of water where Gajau can be seen.
+High Forest/Ancient Tree
+High in the cliffs and branches of massive trees, one can find the nests of wyverns such as Rathalos, most monsters found in the shorelines or the lower forest don't come here unless provoked, and they'll generally attempt to flee if the King of the Skies or another powerful monster makes its entrance.
+    </h4>
+    </div>
+    </div>
+    <h1 style="font-family: 'Monster Hunter', sans-serif; text-align: center;">Wildspire Waste</h1>
+    <div class="wrapper">
+    <div class="text-box">
+    <img src="waste.webp" style="max-width: 600px; float: left; border: 3px solid #fff; border-radius: 15px; margin-right: 15px;">
+    <h4 style="font-family: 'Monster Hunter', sans-serif; text-align: center;">The Wildspire Waste is an area first introduced in Monster Hunter: World. This area is a vast desert with muddy marshes, twisted canyons, branching caverns, and sandy dunes. Few monsters are adapted to this harsh environment.
+    The apex monsters of the Wildspire Waste are Diablos and Glavenus.
+The Wildspire Waste's water is sourced from the Ancient Forest.
+The Wildspire Waste is filled with large ant mounds, hence its name in Japanese.
+Unlike the past deserts, this area has mudflat wetlands.
+Despite being at the top of the food chain, Diablos and its female counterpart Black Diablos, are actually herbivores.
+A gate leading back to Astera can be found near the southeast camp.
+The Fissure Environmental Trap in area 8 of the Waste requires the presence of a non-aggravated Diablos/Black Diablos within area 13 or 14 to work. It is so far the only Environmental Trap that requires the participation of specific monsters.
+</h4>
+    </div>
+    </div>
+    <h1 style="font-family: 'Monster Hunter', sans-serif; text-align: center;">Rotten Vale</h1>
+    <div class="wrapper">
+    <div class="text-box">
+    <img src="forest.webp" style="max-width: 600px; float: right; border: 3px solid #fff; border-radius: 15px; margin-left: 15px;">
+    <h4 style="font-family: 'Monster Hunter', sans-serif; text-align: center;">The Rotten Vale is a location first introduced in Monster Hunter: World. This area is an inhospitable valley littered with the corpses of dead monsters.
+    The Rotten Vale can be divided into three sections; the third being much smaller in size.
+Upper Section
+The upper area near the starting camp is fairly open and mostly inhabited by Radobaan, Hornetaur, and Vespoid. It is mostly made up of large bony structures.
+Deeper Section
+The area that can be reached by jumping from the upper section has numerous Girros. Of course, their leader Great Girros lives here, while Odogaron and Radobaan can also be found in the upper and deeper portions of this zone, respectively. In addition, the second camp is located in this section. Effluvium is a big problem from the first portions to the deepest parts of this section. The corpses of Raphinos and, very rarely, Legiana will occasionally fall to this area.
+Acid Pools and the Depths
+The depths of the Rotten Vale has acid that can damage hunters. The dens of Odogaron and Vaal Hazak can be found here.
+</h4>
+    </div>
+    </div>
+    <h1 style="font-family: 'Monster Hunter', sans-serif; text-align: center;">Elder's Recess</h1>
+    <div class="wrapper">
+    <div class="text-box">
+    <img src="elder.webp" style="max-width: 600px; float: left; border: 3px solid #fff; border-radius: 15px; margin-right: 15px;">
+    <h4 style="font-family: 'Monster Hunter', sans-serif; text-align: center;">The Elder's Recess is an area first introduced in Monster Hunter: World. It is a volcanic environment covered in the crystallized bioenergy of Elder Dragons.
+The apex monster of the Elder's Recess is Brachydios.
+Some crystal structures hang above area 8, hunters can bring them down upon monsters using their Slingers.
+Some breakable crystal stalagmites can be climbed on, making them useful for jumping on and mounting monsters.
+The Elder's Recess is an uncharted land brimming with powerful energy.
+Its geography is dominated by mysterious, gigantic crystalline structures, but also features hazardous caverns seething with magma, some of which has cooled into stretches of uneven basalt.
+The Elder's Recess is a zone unlocked after diverting Zorah Magdaros away from the Everstream and then hunting down the Pink Rathian. Items such as the Firecell core can be found in mining nodes throughout the area.
+</h4>
+    </div>
+    </div>
+  </div>
+
+  <div class="w3-row-padding w3-grayscale">
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <img src="/w3images/team2.jpg" alt="John" style="width:100%">
+      <h3>John Doe</h3>
+      <p class="w3-opacity">CEO & Founder</p>
+      <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+      <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <img src="/w3images/team1.jpg" alt="Jane" style="width:100%">
+      <h3>Jane Doe</h3>
+      <p class="w3-opacity">Architect</p>
+      <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+      <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <img src="/w3images/team3.jpg" alt="Mike" style="width:100%">
+      <h3>Mike Ross</h3>
+      <p class="w3-opacity">Architect</p>
+      <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+      <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <img src="/w3images/team4.jpg" alt="Dan" style="width:100%">
+      <h3>Dan Star</h3>
+      <p class="w3-opacity">Architect</p>
+      <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+      <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
+    </div>
+  </div>
+
+  <!-- Contact Section -->
+  <div class="w3-container w3-padding-32" id="contact">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Contact</h3>
+    <p>Lets get in touch and talk about your next project.</p>
+    <form action="/action_page.php" target="_blank">
+      <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+      <input class="w3-input w3-section w3-border" type="text" placeholder="Email" required name="Email">
+      <input class="w3-input w3-section w3-border" type="text" placeholder="Subject" required name="Subject">
+      <input class="w3-input w3-section w3-border" type="text" placeholder="Comment" required name="Comment">
+      <button class="w3-button w3-black w3-section" type="submit">
+        <i class="fa fa-paper-plane"></i> SEND MESSAGE
+      </button>
+    </form>
+  </div>
+  
+<!-- Image of location/map -->
+<div class="w3-container">
+  <img src="/w3images/map.jpg" class="w3-image" style="width:100%">
+</div>
+
+<!-- End page content -->
+</div>
+
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-16">
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+</footer>
+
+</body>
+</html>
