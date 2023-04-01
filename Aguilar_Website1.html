@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grab Food</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <!-- Font Awesome CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+  <!-- Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-green fixed-top" style="background-color: green;">
+    <div class="container">
+      <a class="navbar-brand" href="#">Grab Food</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Menu</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Parallax Section -->
+<section class="parallax" data-parallax="scroll" data-image-src="background.jpg">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <br><br><br><br>
+        <h1 class="text-center">Welcome to Grab Food!</h1>
+        <p class="text-center">Satisfy your hunger with our delicious food</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- About Section -->
+  <section class="about">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <h2 class="text-center">About Us</h2>
+          <p class="text-center">Grab Food is committed to providing its customers with delectable and nourishing food delivered straight to their doorsteps. Our objective is to offer a diverse selection of food choices that are not only flavorsome but also healthy.</p>
+ </div>
+  </div>
+</div>
+  </section>
+  <!-- Menu Section -->
+  <section class="menu">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <h2 class="text-center">Our Menu</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-4 col-md-6">
+          <div class="card">
+            <img class="card-img-top" src="curry.jpg" alt="curry">
+            <div class="card-body">
+              <h5 class="card-title">Chicken Curry</h5>
+              <p class="card-text">Chicken Curry with coconut milk and curry spices is a hearty and tasty dish the whole family will love.</p>
+              <a href="#" class="btn btn-primary">Order Now</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="card">
+            <img class="card-img-top" src="fries.jpg" alt="Fries">
+            <div class="card-body">
+              <h5 class="card-title">French Fries</h5>
+              <p class="card-text">Our crispy and golden fries are the perfect accompaniment to any meal. Made from premium quality potatoes and cooked to perfection, our fries are sure to tantalize your taste buds. Seasoned with a perfect blend of salt and spices.</p>
+              <a href="#" class="btn btn-primary">Order Now</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="card">
+            <img class="card-img-top" src="burger.jpeg" alt="burger">
+            <div class="card-body">
+              <h5 class="card-title">Hamburger</h5>
+              <p class="card-text">Sink your teeth into our mouth-watering burgers that are packed with flavor and made with only the freshest ingredients. Our juicy patties are cooked to perfection and served on a toasted bun with all the classic toppings, including crisp lettuce, ripe tomatoes, and tangy pickles. Choose from a variety of toppings and sauces to customize your burger just the way you like it.</p>
+              <a href="#" class="btn btn-primary">Order Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Contact Section -->
+  <section class="contact">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <h2 class="text-center">Contact Us</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-6">
+          <form>
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" class="form-control" id="name" placeholder="Enter your name">
+            </div>
+            <div class="form-group">
+              <label for="email">Email address</label>
+              <input type="email" class="form-control" id="email" placeholder="Enter your email">
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea class="form-control" id="message" rows="5"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
+        <div class="col-lg-6">
+          <p>Contact us at:</p>
+          <p><i class="fas fa-map-marker-alt"></i> Address: 123 Main St, City, State ZIP</p>
+          <p><i class="fas fa-phone"></p>
+  </i> Phone: (123) 456-7890</p>
+      <p><i class="fas fa-envelope"></i> Email: grab.gmail.com</p>
+      <div id="map"></div>
+    </div>
+  </div>
+</div>
+  </section>
+  <!-- Footer Section -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <p>&copy; 2023 GrabFood. All Rights Reserved.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+  <!-- Parallax.js -->
+  <script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script>
+  <script>
+    var scene = document.getElementById('scene');
+    var parallaxInstance = new Parallax(scene);
+  </script>
+</body>
+</html>
