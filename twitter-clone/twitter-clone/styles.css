@@ -5,14 +5,16 @@
 }
 
 body {
-  --twitter-color: #50b7f5;
-  --twitter-background: #e6ecf0;
+  --twitter-color: indigo;
+  --twitter-background: indigo;
+  font-family:Verdana, Geneva, Tahoma, sans-serif
 }
 
 .sidebarOption {
   display: flex;
   align-items: center;
   cursor: pointer;
+  color: indigo;
 }
 
 .sidebarOption .material-icons,
@@ -29,19 +31,19 @@ body {
 .sidebarOption:hover {
   background-color: var(--twitter-background);
   border-radius: 30px;
-  color: var(--twitter-color);
-  transition: color 100ms ease-out;
+  color: #afe79f;
+  transition: color 50ms ease-out;
 }
 
 .sidebarOption.active {
-  color: var(--twitter-color);
+ font-weight: 900;
 }
 
 .sidebar__tweet {
   width: 100%;
   background-color: var(--twitter-color);
   border: none;
-  color: white;
+  color: #afe79f;
   font-weight: 900;
   border-radius: 30px;
   height: 50px;
@@ -55,6 +57,7 @@ body {
   margin-left: auto;
   margin-right: auto;
   padding: 0 10px;
+  background-color: #afe79f;
 }
 
 .sidebar {
@@ -62,7 +65,7 @@ body {
   flex: 0.2;
 
   min-width: 250px;
-  margin-top: 20px;
+  margin-top: 0px;
   padding-left: 20px;
   padding-right: 20px;
 }
@@ -83,15 +86,18 @@ body {
 .feed__header {
   position: sticky;
   top: 0;
-  background-color: white;
+  background-color: #afe79f;
   z-index: 100;
   border: 1px solid var(--twitter-background);
   padding: 15px 20px;
+  border-left: none;
+  border-right: none;
 }
 
 .feed__header h2 {
   font-size: 20px;
   font-weight: 800;
+  color: indigo;
 }
 
 .feed::-webkit-scrollbar {
@@ -110,6 +116,7 @@ body {
 }
 
 .tweetBox {
+  border-top: none;
   padding-bottom: 10px;
   border-bottom: 8px solid var(--twitter-background);
   padding-right: 10px;
@@ -123,6 +130,7 @@ body {
 .tweetbox__input {
   display: flex;
   padding: 20px;
+  
 }
 
 .tweetbox__input input {
@@ -131,12 +139,14 @@ body {
   font-size: 20px;
   border: none;
   outline: none;
+  background-color: #afe79f;
+  color: #23195e;
 }
 
 .tweetBox__tweetButton {
   background-color: var(--twitter-color);
   border: none;
-  color: white;
+  color: #afe79f;
   font-weight: 900;
 
   border-radius: 30px;
@@ -180,17 +190,19 @@ body {
 .post__headerSpecial {
   font-weight: 600;
   font-size: 12px;
-  color: gray;
+  color: #3a2a99;
 }
 
 .post__headerText h3 {
   font-size: 15px;
   margin-bottom: 5px;
+  color: #23195e;
 }
 
 .post__headerDescription {
   margin-bottom: 10px;
   font-size: 15px;
+  color: #23195e;
 }
 
 .post__body {
@@ -207,6 +219,8 @@ body {
   flex: 0.3;
 }
 
+
+
 .widgets__input {
   display: flex;
   align-items: center;
@@ -215,26 +229,31 @@ body {
   border-radius: 20px;
   margin-top: 10px;
   margin-left: 20px;
+  
 }
 
 .widgets__input input {
   border: none;
   background-color: var(--twitter-background);
+  color:#8AD776;
 }
 
 .widgets__searchIcon {
-  color: gray;
+  color:#8AD776;
 }
 
 .widgets__widgetContainer {
   margin-top: 15px;
   margin-left: 20px;
   padding: 20px;
-  background-color: #f5f8fa;
+  background-color: #8AD776;
   border-radius: 20px;
+  color: rgb(55, 0, 94);
 }
 
 .widgets__widgetContainer h2 {
   font-size: 18px;
   font-weight: 800;
 }
+
+
