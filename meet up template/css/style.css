@@ -203,6 +203,7 @@ a span.ti-twitter-alt {
 	margin-top: 4em;
 }
 .schedule .media-object {
+    border-radius: 50%;
 	max-width: 100px;
 }
 .schedule .media-heading {
