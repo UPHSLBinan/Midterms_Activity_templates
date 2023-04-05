@@ -11,6 +11,7 @@ html {
 }
 
 body {
+  background-color: #FFFFE0;
   font-family: 'Roboto', sans-serif;
   font-size: 1.5rem;
   font-weight: 400;
@@ -53,7 +54,7 @@ a {
   width: 100%;
   position: fixed;
   z-index: 100;
-  background-color: white;
+  background-color: orange;
 }
 
 .nav-main ul {
@@ -96,11 +97,11 @@ a {
 }
 
 .nav--search i {
-  background-color: white;
+  background-color: gold;
   outline: none;
   font-size: 2rem;
   margin-left: -5rem;
-  background-color: white;
+  background-color: gold;
   border: none;
 
 }
