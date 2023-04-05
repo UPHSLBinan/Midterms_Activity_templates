@@ -79,7 +79,7 @@ h6 {
   z-index: 9997;
   transition: all 0.5s;
   padding: 0 15px;
-  background: #040b14;
+  background: #bb0694;
   overflow-y: auto;
 }
 
@@ -102,14 +102,14 @@ h6 {
 
 #header .profile h1 a,
 #header .profile h1 a:hover {
-  color: #fff;
+  color: #8cc55e;
   text-decoration: none;
 }
 
 #header .profile .social-links a {
   font-size: 18px;
   display: inline-block;
-  background: #212431;
+  background: #1232be;
   color: #fff;
   line-height: 1;
   padding: 8px 0;
@@ -680,6 +680,7 @@ section {
 .portfolio-details .portfolio-description p {
   padding: 0;
 }
+
 
 /*--------------------------------------------------------------
 # Services
