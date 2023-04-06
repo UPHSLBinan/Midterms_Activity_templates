@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Dota 2</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+p,h4{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size:20px;
+    	letter-spacing: 2px;
+}
+.filter-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  margin-bottom: 20px;
+  border: 3px solid black;
+  padding: 0;
+}
+
+.filter-buttons button {
+  display: inline-block;
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  margin-right: -3px;
+  cursor: pointer;
+  filter: grayscale(100%);
+}
+
+.filter-buttons button img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.filter-buttons button.active {
+  filter: grayscale(0%);
+}
+
+.image-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.image-item {
+  width:18%;
+  margin: 10px 1%;
+  position: relative;
+}
+.hover-content {
+  position: absolute;
+  width: 30px;
+  top: 90px;
+  left: -35px;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+.hover-content p {
+  position: relative;
+  line-height: 0.9;
+  top: 50%;
+  bottom: 0;
+  left: 210%;
+  transform: translateX(-50%);
+  color: #fff;
+  font-size: 22px;
+  padding: 5px 10px;
+  margin: 0;
+  white-space: nowrap;
+}
+.hover-content h1 {
+  position: relative;
+  line-height: 0.9;
+  top: 30%;
+  bottom: 0;
+  left: 210%;
+  transform: translateX(-50%);
+  color: #fff;
+  font-size: 22px;
+  padding: 5px 10px;
+  margin: 0;
+  white-space: nowrap;
+}
+.image-item:hover .hover-content {
+  opacity: 1;
+}
+
+.hover-content img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.image-item img {
+  display: flex;
+  width: 100%;
+  height: auto;
+  transition: all 0.4s ease-in-out;
+  transform: scale(1);
+}
+
+.image-item:hover img {
+  transform: scale(1.35);
+}
+
+.image-item:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.grayscale:before {
+  background-color: rgba(0, 0, 0, 0.5);
+  filter: grayscale(100%);
+}
+
+.sepia:before {
+  background-color: rgba(255, 204, 102, 0.5);
+  filter: sepia(100%);
+}
+
+.image-item:hover:before {
+  opacity: 1;
+}
+@import url('https://fonts.googleapis.com/css2?family=Luminari&display=swap');
+@font-face {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+}
+.video-container {
+  position: relative;
+}
+.video-container video {
+  display: block;
+  width: 100%;
+}
+.video-container img {
+  position: absolute;
+  top: 20%;
+  left: 44%;
+  width: 200px;
+  height: auto;
+  z-index: 1;
+}
+body,h1,h2,h3,h4,h5,h6 {
+  font-family: Arial, Helvetica, sans-serif;
+</style>
+</head>
+<body class="w3-black">
+
+<!-- Navigation Bar -->
+<div class="w3-bar w3-white w3-border-bottom w3-xlarge">
+  <a href="#" class="w3-bar-item w3-button w3-text-red w3-hover-red"><img src="dota2.png" width="30px"> Dota 2</a>
+  <a href="#" class="w3-bar-item w3-button w3-right w3-hover-red w3-text-grey"><i class="fa fa-search"></i></a>
+</div>
+
+<!-- Header -->
+<header class="w3-display-container w3-content w3-hide-small" style="max-width:100%">
+  <div class="video-container">
+  <video src="dota.mp4" autoplay muted loop></video>
+  <img src="dota.png">
+  </div>
+  </video>&nbsp&nbsp&nbsp
+  </header><br><br><br>
+
+  <div class="w3-content" style="max-width:2000px;">
+  <div style="position: relative;">
+  <img src="dota3.jpg" alt="Image description">
+  <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center;">
+    <h1 style="font-size:80px; letter-spacing:2px;">JOIN THE BATTLE OF THE ANCIENTS</h1>
+    <p>This is the ultimate online battle arena where players from around the globe engage in strategic, team-based gameplay to claim victory 
+    over their opponents. Dota 2 is a multiplayer game that requires skill, precision, and teamwork to succeed. With an ever-expanding roster of heroes, 
+    each with their unique abilities and playstyles, the possibilities for gameplay are endless.</p>
+  </div>
+</div>
+  <br><br><br><br><br><br><br><br><br>
+
+  <div class="w3-content" style="max-width:1300px;">
+  <b><h1 style="text-align:center; font-size:45px;">CHOOSE YOUR HERO</h1></b>
+  <h3 style="text-align:center; font-size:25px;">From magical tacticians to fierce brutes and cunning rogues, Dota 2's hero pool is 
+  massive and limitlessly diverse. Unleash incredible abilities and devastating ultimates on your way to victory.</h3>
+  <div class="filter-buttons">
+  <p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbspFILTER HEROES&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</p>
+  <p>ATTRIBUTE&nbsp&nbsp&nbsp</p>
+  <button class="active" data-filter="str"><img src="logo/str.png" alt="All"></button>
+  <button class="active" data-filter="agi"><img src="logo/agi.png" alt="All"></button>
+  <button class="active" data-filter="int"><img src="logo/int.png" alt="All"></button>&nbsp&nbsp&nbsp
+  <button class="active" data-filter="all"><img src="logo/return.png" style="width:30px;" alt="All"></button><p></p>
+</div>
+
+<div class="image-gallery">
+  <div class="image-item str"><img src="heroes/abbadon.png" alt="Image 1"><div class="hover-content">
+  <img src="logo/str2.png" alt="Hover Image"><p>ABBADON</p></div></div>
+  <div class="image-item str"><img src="heroes/alchemist.png" alt="Image 1"><div class="hover-content">
+  <img src="logo/str2.png" alt="Hover Image"><p>ALCHEMIST</p></div></div>
+  <div class="image-item int"><img src="heroes/ancient_apparition.png" alt="Image 1"><div class="hover-content">
+  <img src="logo/int2.png" alt="Hover Image"><h1>ANCIENT<BR>APPARATION</h1></div></div>
+  <div class="image-item agi"><img src="heroes/antimage.png" alt="Image 1"><div class="hover-content">
+  <img src="logo/agi2.png" alt="Hover Image"><p>ANTI-MAGE</p></div></div>
+  <div class="image-item agi"><img src="heroes/arc_warden.png" alt="Image 1"><div class="hover-content">
+  <img src="logo/agi2.png" alt="Hover Image"><p>ARC WARDEN</p></div></div>
+  <div class="image-item str"><img src="heroes/axe.png" alt="Image 1"><div class="hover-content">
+  <img src="logo/str2.png" alt="Hover Image"><p>AXE</p></div></div>
+  <div class="image-item int"><img src="heroes/bane.png" alt="Image 1"><div class="hover-content">
+  <img src="logo/int2.png" alt="Hover Image"><p>BANE</p></div></div>
+  <div class="image-item str"><img src="heroes/batrider.png" alt="Image 1"><div class="hover-content">
+  <img src="logo/str2.png" alt="Hover Image"><p>BATRIDER</p></div></div>
+  <div class="image-item str"><img src="heroes/beastmaster.png" alt="Image 1"><div class="hover-content">
+  <img src="logo/str2.png" alt="Hover Image"><p>BEASTMASTER</p></div></div>
+  <div class="image-item agi"><img src="heroes/bloodseeker.png" alt="Image 1"><div class="hover-content">
+  <img src="logo/agi2.png" alt="Hover Image"><p>BLOODSEEKER</p></div></div>
+  <div class="image-item agi"><img src="heroes/bounty_hunter.png" alt="Image 1"><div class="hover-content">
+  <img src="logo/agi2.png" alt="Hover Image"><p>BOUNTY HUNTER</p></div></div>
+  <div class="image-item str"><img src="heroes/brewmaster.png" alt="Image 1"><div class="hover-content">
+  <img src="logo/str2.png" alt="Hover Image"><p>BREWMASTER</p></div></div>
+  <div class="image-item str"><img src="heroes/bristleback.png" alt="Image 1"><div class="hover-content">
+  <img src="logo/str2.png" alt="Hover Image"><p>BRISTLEBACK</p></div></div>
+  <div class="image-item agi"><img src="heroes/broodmother.png" alt="Image 1"><div class="hover-content">
+  <img src="logo/agi2.png" alt="Hover Image"><p>BROODMOTHER</p></div></div>
+  <div class="image-item str"><img src="heroes/centaur.png" alt="Image 1"><div class="hover-content">
+  <img src="logo/str2.png" alt="Hover Image"><h1>CENTAUR<BR>WARRUNNER</h1></div></div>
+  <div class="image-item str"><img src="heroes/chaos_knight.png" alt="Image 1"><div class="hover-content">
+  <img src="logo/str2.png" alt="Hover Image"><p>CHAOS KNIGHT</p></div></div>
+  <div class="image-item int"><img src="heroes/chen.png" alt="Image 1"><div class="hover-content">
+  <img src="logo/int2.png" alt="Hover Image"><p>CHEN</p></div></div>
+  <div class="image-item agi"><img src="heroes/clinkz.png" alt="Image 1"><div class="hover-content">
+  <img src="logo/agi2.png" alt="Hover Image"><p>CLINKZ</p></div></div>
+  <div class="image-item str"><img src="heroes/rattletrap.png" alt="Image 1"><div class="hover-content">
+  <img src="logo/str2.png" alt="Hover Image"><p>CLOCKWERK</p></div></div>
+  <div class="image-item int"><img src="heroes/crystal_maiden.png" alt="Image 1"><div class="hover-content">
+  <img src="logo/int2.png" alt="Hover Image"><h1>CRYSTAL MAIDEN</h1></div></div>
+  <div class="image-item int"><img src="heroes/dark_seer.png" alt="Image 1"><div class="hover-content">
+  <img src="logo/int2.png" alt="Hover Image"><p>DARK SEER</p></div></div>
+  <div class="image-item int"><img src="heroes/dark_willow.png" alt="Image 1"><div class="hover-content">
+  <img src="logo/int2.png" alt="Hover Image"><p>DARKWILLOW</p></div></div>
+  <div class="image-item str"><img src="heroes/dawnbreaker.png" alt="Image 1"><div class="hover-content">
+  <img src="logo/str2.png" alt="Hover Image"><p>DAWNBREAKER</p></div></div>
+  <div class="image-item int"><img src="heroes/dazzle.png" alt="Image 1"><div class="hover-content">
+  <img src="logo/int2.png" alt="Hover Image"><p>DAZZLE</p></div></div>
+  <div class="image-item int"><img src="heroes/death_prophet.png" alt="Image 1"><div class="hover-content">
+  <img src="logo/int2.png" alt="Hover Image"><p>DEATH PROPHET</p></div></div>
+  <div class="image-item int"><img src="heroes/disruptor.png" alt="Image 1"><div class="hover-content">
+  <img src="logo/int2.png" alt="Hover Image"><p>DISRUPTOR</p></div></div>
+  <div class="image-item str"><img src="heroes/doom_bringer.png" alt="Image 1"><div class="hover-content">
+  <img src="logo/str2.png" alt="Hover Image"><p>DOOM</p></div></div>
+  <div class="image-item str"><img src="heroes/dragon_knight.png" alt="Image 1"><div class="hover-content">
+  <img src="logo/str2.png" alt="Hover Image"><p>DRAGON KNIGHT</p></div></div>
+  <div class="image-item agi"><img src="heroes/drow_ranger.png" alt="Image 1"><div class="hover-content">
+  <img src="logo/agi2.png" alt="Hover Image"><p>DROW RANGER</p></div></div>
+  <div class="image-item str"><img src="heroes/earth_spirit.png" alt="Image 1"><div class="hover-content">
+  <img src="logo/str2.png" alt="Hover Image"><p>EARTH SPIRIT</p></div></div>
+  <div class="image-item str"><img src="heroes/earthshaker.png" alt="Image 1"><div class="hover-content">
+  <img src="logo/str2.png" alt="Hover Image"><p>EARTHSHAKER</p></div></div>
+  <div class="image-item str"><img src="heroes/elder_titan.png" alt="Image 1"><div class="hover-content">
+  <img src="logo/str2.png" alt="Hover Image"><p>ELDER TITAN</p></div></div>
+  <div class="image-item agi"><img src="heroes/ember_spirit.png" alt="Image 1"><div class="hover-content">
+  <img src="logo/agi2.png" alt="Hover Image"><p>EMBER SPIRIT</p></div></div>
+  <div class="image-item int"><img src="heroes/enchantress.png" alt="Image 1"><div class="hover-content">
+  <img src="logo/int2.png" alt="Hover Image"><p>ENCHANTRESS</p></div></div>
+  <div class="image-item int"><img src="heroes/enigma.png" alt="Image 1"><div class="hover-content">
+  <img src="logo/int2.png" alt="Hover Image"><p>ENIGMA</p></div></div>
+  <div class="image-item agi"><img src="heroes/faceless_void.png" alt="Image 1"><div class="hover-content">
+  <img src="logo/agi2.png" alt="Hover Image"><p>FACELESS VOID</p></div></div>
+  <div class="image-item int"><img src="heroes/grimstroke.png" alt="Image 1"><div class="hover-content">
+  <img src="logo/int2.png" alt="Hover Image"><p>GRIMSTROKE</p></div></div>
+  <div class="image-item agi"><img src="heroes/gyrocopter.png" alt="Image 1"><div class="hover-content">
+  <img src="logo/str2.png" alt="Hover Image"><p>GYROCOPTER</p></div></div>
+  <div class="image-item str"><img src="heroes/hoodwink.png" alt="Image 1"><div class="hover-content">
+  <img src="logo/agi2.png" alt="Hover Image"><p>HOODWINK</p></div></div>
+  <div class="image-item str"><img src="heroes/huskar.png" alt="Image 1"><div class="hover-content">
+  <img src="logo/str2.png" alt="Hover Image"><p>HUSKAR</p></div></div>
+  <div class="image-item int"><img src="heroes/invoker.png" alt="Image 1"><div class="hover-content">
+  <img src="logo/int2.png" alt="Hover Image"><p>INVOKER</p></div></div>
+  <div class="image-item str"><img src="heroes/wisp.png" alt="Image 1"><div class="hover-content">
+  <img src="logo/str2.png" alt="Hover Image"><p>IO</p></div></div>
+  <div class="image-item int"><img src="heroes/jakiro.png" alt="Image 1"><div class="hover-content">
+  <img src="logo/int2.png" alt="Hover Image"><p>JAKIRO</p></div></div>
+  <div class="image-item agi"><img src="heroes/juggernaut.png" alt="Image 1"><div class="hover-content">
+  <img src="logo/agi2.png" alt="Hover Image"><p>JUGGERNAUT</p></div></div>
+  <div class="image-item int"><img src="heroes/keeper_of_the_light.png" alt="Image 1"><div class="hover-content">
+  <img src="logo/int2.png" alt="Hover Image"><h1>KEEPER OF THE<BR>LIGHT</h1></div></div>
+  <div class="image-item str"><img src="heroes/kunkka.png" alt="Image 1"><div class="hover-content">
+  <img src="logo/str2.png" alt="Hover Image"><p>KUNKKA</p></div></div>
+  <div class="image-item str"><img src="heroes/legion_commander.png" alt="Image 1"><div class="hover-content">
+  <img src="logo/str2.png" alt="Hover Image"><h1>LEGION<BR>COMMANDER</h1></div></div>
+  <div class="image-item int"><img src="heroes/leshrac.png" alt="Image 1"><div class="hover-content">
+  <img src="logo/int2.png" alt="Hover Image"><p>LESHRAC</p></div></div>
+  <div class="image-item int"><img src="heroes/lich.png" alt="Image 1"><div class="hover-content">
+  <img src="logo/int2.png" alt="Hover Image"><p>LICH</p></div></div>
+  <div class="image-item str"><img src="heroes/life_stealer.png" alt="Image 1"><div class="hover-content">
+  <img src="logo/str2.png" alt="Hover Image"><p>LIFESTEALER</p></div></div>
+  <div class="image-item int"><img src="heroes/lina.png" alt="Image 1"><div class="hover-content">
+  <img src="logo/int2.png" alt="Hover Image"><p>LINA</p></div></div>
+  <div class="image-item int"><img src="heroes/lion.png" alt="Image 1"><div class="hover-content">
+  <img src="logo/int2.png" alt="Hover Image"><p>LION</p></div></div>
+  <div class="image-item agi"><img src="heroes/lone_druid.png" alt="Image 1"><div class="hover-content">
+  <img src="logo/agi2.png" alt="Hover Image"><p>LONEDRUID</p></div></div>
+  <div class="image-item agi"><img src="heroes/luna.png" alt="Image 1"><div class="hover-content">
+  <img src="logo/agi2.png" alt="Hover Image"><p>LUNA</p></div></div>
+  <div class="image-item str"><img src="heroes/lycan.png" alt="Image 1"><div class="hover-content">
+  <img src="logo/str2.png" alt="Hover Image"><p>LYCAN</p></div></div>
+  <div class="image-item str"><img src="heroes/magnataur.png" alt="Image 1"><div class="hover-content">
+  <img src="logo/str2.png" alt="Hover Image"><p>MAGNUS</p></div></div>
+  <div class="image-item str"><img src="heroes/marci.png" alt="Image 1"><div class="hover-content">
+  <img src="logo/str2.png" alt="Hover Image"><p>MARCI</p></div></div>
+  <div class="image-item str"><img src="heroes/mars.png" alt="Image 1"><div class="hover-content">
+  <img src="logo/str2.png" alt="Hover Image"><p>MARS</p></div></div>
+  <div class="image-item agistr"><img src="heroes/medusa.png" alt="Image 1"><div class="hover-content">
+  <img src="logo/agi2.png" alt="Hover Image"><p>MEDUSA</p></div></div>
+  <div class="image-item agi"><img src="heroes/meepo.png" alt="Image 1"><div class="hover-content">
+  <img src="logo/agi2.png" alt="Hover Image"><p>MEEPO</p></div></div>
+  <div class="image-item agi"><img src="heroes/mirana.png" alt="Image 1"><div class="hover-content">
+  <img src="logo/agi2.png" alt="Hover Image"><p>MIRANA</p></div></div>
+  <div class="image-item agi"><img src="heroes/monkey_king.png" alt="Image 1"><div class="hover-content">
+  <img src="logo/agi2.png" alt="Hover Image"><p>MONKEY KING</p></div></div>
+  <div class="image-item agi"><img src="heroes/morphling.png" alt="Image 1"><div class="hover-content">
+  <img src="logo/agi2.png" alt="Hover Image"><p>MORPHLING</p></div></div>
+  <div class="image-item int"><img src="heroes/muerta.png" alt="Image 1"><div class="hover-content">
+  <img src="logo/int2.png" alt="Hover Image"><p>MUERTA</p></div></div>
+  <div class="image-item agi"><img src="heroes/naga_siren.png" alt="Image 1"><div class="hover-content">
+  <img src="logo/agi2.png" alt="Hover Image"><p>NAGA SIREN</p></div></div>
+  <div class="image-item int"><img src="heroes/furion.png" alt="Image 1"><div class="hover-content">
+  <img src="logo/int2.png" alt="Hover Image"><h1>NATURE'S PROPHET</h1></div></div>
+  <div class="image-item int"><img src="heroes/necrolyte.png" alt="Image 1"><div class="hover-content">
+  <img src="logo/int2.png" alt="Hover Image"><p>NECROPHOS</p></div></div>
+  <div class="image-item str"><img src="heroes/night_stalker.png" alt="Image 1"><div class="hover-content">
+  <img src="logo/str2.png" alt="Hover Image"><p>NIGHT STALKER</p></div></div>
+  <div class="image-item agi"><img src="heroes/nyx_assassin.png" alt="Image 1"><div class="hover-content">
+  <img src="logo/agi2.png" alt="Hover Image"><p>NYX ASSASSIN</p></div></div>
+  <div class="image-item int"><img src="heroes/ogre_magi.png" alt="Image 1"><div class="hover-content">
+  <img src="logo/int2.png" alt="Hover Image"><p>OGRE MAGI</p></div></div>
+  <div class="image-item str"><img src="heroes/omniknight.png" alt="Image 1"><div class="hover-content">
+  <img src="logo/str2.png" alt="Hover Image"><p>OMNIKNIGHT</p></div></div>
+  <div class="image-item int"><img src="heroes/oracle.png" alt="Image 1"><div class="hover-content">
+  <img src="logo/int2.png" alt="Hover Image"><p>ORACLE</p></div></div>
+  <div class="image-item int"><img src="heroes/obsidian_destroyer.png" alt="Image 1"><div class="hover-content">
+  <img src="logo/int2.png" alt="Hover Image"><h1>OUTWORLD<BR>DESTROYER</h1></div></div>
+  <div class="image-item agi"><img src="heroes/pangolier.png" alt="Image 1"><div class="hover-content">
+  <img src="logo/agi2.png" alt="Hover Image"><p>PANGOLIER</p></div></div>
+  <div class="image-item agi"><img src="heroes/phantom_assassin.png" alt="Image 1"><div class="hover-content">
+  <img src="logo/agi2.png" alt="Hover Image"><p>PHANTOM ASSASSIN</p></div></div>
+  <div class="image-item agi"><img src="heroes/phantom_lancer.png" alt="Image 1"><div class="hover-content">
+  <img src="logo/agi2.png" alt="Hover Image"><h1>PHANTOM LANCER</h1></div></div>
+  <div class="image-item str"><img src="heroes/phoenix.png" alt="Image 1"><div class="hover-content">
+  <img src="logo/str2.png" alt="Hover Image"><p>PHOENIX</p></div></div>
+  <div class="image-item str"><img src="heroes/primal_beast.png" alt="Image 1"><div class="hover-content">
+  <img src="logo/str2.png" alt="Hover Image"><p>PRIMAL BEAST</p></div></div>
+  <div class="image-item int"><img src="heroes/puck.png" alt="Image 1"><div class="hover-content">
+  <img src="logo/int2.png" alt="Hover Image"><p>PUCK</p></div></div>
+  <div class="image-item str"><img src="heroes/pudge.png" alt="Image 1"><div class="hover-content">
+  <img src="logo/str2.png" alt="Hover Image"><p>PUDGE</p></div></div>
+  <div class="image-item int"><img src="heroes/pugna.png" alt="Image 1"><div class="hover-content">
+  <img src="logo/int2.png" alt="Hover Image"><p>PUGNA</p></div></div>
+  <div class="image-item int"><img src="heroes/queenofpain.png" alt="Image 1"><div class="hover-content">
+  <img src="logo/int2.png" alt="Hover Image"><p>QUEEN OF PAIN</p></div></div>
+  <div class="image-item agi"><img src="heroes/razor.png" alt="Image 1"><div class="hover-content">
+  <img src="logo/agi2.png" alt="Hover Image"><p>RAZOR</p></div></div>
+  <div class="image-item agi"><img src="heroes/riki.png" alt="Image 1"><div class="hover-content">
+  <img src="logo/agi2.png" alt="Hover Image"><p>RIKI</p></div></div>
+  <div class="image-item int"><img src="heroes/rubick.png" alt="Image 1"><div class="hover-content">
+  <img src="logo/int2.png" alt="Hover Image"><p>RUBICK</p></div></div>
+  <div class="image-item str"><img src="heroes/sand_king.png" alt="Image 1"><div class="hover-content">
+  <img src="logo/str2.png" alt="Hover Image"><p>SAND KING</p></div></div>
+  <div class="image-item int"><img src="heroes/shadow_demon.png" alt="Image 1"><div class="hover-content">
+  <img src="logo/int2.png" alt="Hover Image"><h1>SHADOW<BR>DEMON</h1></div></div>
+  <div class="image-item agi"><img src="heroes/nevermore.png" alt="Image 1"><div class="hover-content">
+  <img src="logo/agi2.png" alt="Hover Image"><p>SHADOW FIEND</p></div></div>
+  <div class="image-item int"><img src="heroes/shadow_shaman.png" alt="Image 1"><div class="hover-content">
+  <img src="logo/int2.png" alt="Hover Image"><h1>SHADOW<BR>SHAMAN</h1></div></div>
+  <div class="image-item int"><img src="heroes/silencer.png" alt="Image 1"><div class="hover-content">
+  <img src="logo/int2.png" alt="Hover Image"><p>SILENCER</p></div></div>
+  <div class="image-item int"><img src="heroes/skywrath_mage.png" alt="Image 1"><div class="hover-content">
+  <img src="logo/int2.png" alt="Hover Image"><h1>SKYWRATH<BR>MAGE</h1></div></div>
+  <div class="image-item str"><img src="heroes/slardar.png" alt="Image 1"><div class="hover-content">
+  <img src="logo/str2.png" alt="Hover Image"><p>SLARDAR</p></div></div>
+  <div class="image-item agi"><img src="heroes/slark.png" alt="Image 1"><div class="hover-content">
+  <img src="logo/agi2.png" alt="Hover Image"><p>SLARK</p></div></div>
+  <div class="image-item str"><img src="heroes/snapfire.png" alt="Image 1"><div class="hover-content">
+  <img src="logo/str2.png" alt="Hover Image"><p>SNAPFIRE</p></div></div>
+  <div class="image-item agi"><img src="heroes/sniper.png" alt="Image 1"><div class="hover-content">
+  <img src="logo/agi2.png" alt="Hover Image"><p>SNIPER</p></div></div>
+  <div class="image-item agi"><img src="heroes/spectre.png" alt="Image 1"><div class="hover-content">
+  <img src="logo/agi2.png" alt="Hover Image"><p>SPECTRE</p></div></div>
+  <div class="image-item str"><img src="heroes/spirit_breaker.png" alt="Image 1"><div class="hover-content">
+  <img src="logo/str2.png" alt="Hover Image"><p>SPIRIT BREAKER</p></div></div>
+  <div class="image-item int"><img src="heroes/storm_spirit.png" alt="Image 1"><div class="hover-content">
+  <img src="logo/int2.png" alt="Hover Image"><p>STORM SPIRIT<</p></div></div>
+  <div class="image-item str"><img src="heroes/sven.png" alt="Image 1"><div class="hover-content">
+  <img src="logo/str2.png" alt="Hover Image"><p>SVEN</p></div></div>
+  <div class="image-item int"><img src="heroes/techies.png" alt="Image 1"><div class="hover-content">
+  <img src="logo/int2.png" alt="Hover Image"><p>TECHIES</p></div></div>
+  <div class="image-item agi"><img src="heroes/templar_assassin.png" alt="Image 1"><div class="hover-content">
+  <img src="logo/agi2.png" alt="Hover Image"><h1>TEMPLAR<BR>ASSASSIN</h1></div></div>
+  <div class="image-item agi"><img src="heroes/terrorblade.png" alt="Image 1"><div class="hover-content">
+  <img src="logo/agi2.png" alt="Hover Image"><p>TERRORBLADE</p></div></div>
+  <div class="image-item str"><img src="heroes/tidehunter.png" alt="Image 1"><div class="hover-content">
+  <img src="logo/str2.png" alt="Hover Image"><p>TIDEHUNTER</p></div></div>
+  <div class="image-item str"><img src="heroes/shredder.png" alt="Image 1"><div class="hover-content">
+  <img src="logo/str2.png" alt="Hover Image"><p>TIMBERSAW</p></div></div>
+  <div class="image-item int"><img src="heroes/tinker.png" alt="Image 1"><div class="hover-content">
+  <img src="logo/int2.png" alt="Hover Image"><p>TINKER</p></div></div>
+  <div class="image-item str"><img src="heroes/tiny.png" alt="Image 1"><div class="hover-content">
+  <img src="logo/str2.png" alt="Hover Image"><p>TINY</p></div></div>
+  <div class="image-item str"><img src="heroes/treant.png" alt="Image 1"><div class="hover-content">
+  <img src="logo/str2.png" alt="Hover Image"><h1>TREANT<BR>PROTECTOR</h1></div></div>
+  <div class="image-item agi"><img src="heroes/troll_warlord.png" alt="Image 1"><div class="hover-content">
+  <img src="logo/agi2.png" alt="Hover Image"><p>TROLL WARLORD</p></div></div>
+  <div class="image-item str"><img src="heroes/tusk.png" alt="Image 1"><div class="hover-content">
+  <img src="logo/str2.png" alt="Hover Image"><p>TUSK</p></div></div>
+  <div class="image-item str"><img src="heroes/abyssal_underlord.png" alt="Image 1"><div class="hover-content">
+  <img src="logo/str2.png" alt="Hover Image"><p>UNDERLORD</p></div></div>
+  <div class="image-item str"><img src="heroes/undying.png" alt="Image 1"><div class="hover-content">
+  <img src="logo/str2.png" alt="Hover Image"><p>UNDYING</p></div></div>
+  <div class="image-item agi"><img src="heroes/URSA.png" alt="Image 1"><div class="hover-content">
+  <img src="logo/agi2.png" alt="Hover Image"><p>URSA</p></div></div>
+  <div class="image-item agi"><img src="heroes/VENGEFULSPIRIT.png" alt="Image 1"><div class="hover-content">
+  <img src="logo/agi2.png" alt="Hover Image"><H1>VENGEFUL<BR>SPIRIT</H1></div></div>
+  <div class="image-item agi"><img src="heroes/VENOMANCER.png" alt="Image 1"><div class="hover-content">
+  <img src="logo/agi2.png" alt="Hover Image"><p>VENOMANCER</p></div></div>
+  <div class="image-item agi"><img src="heroes/VIPER.png" alt="Image 1"><div class="hover-content">
+  <img src="logo/agi2.png" alt="Hover Image"><p>VIPER</p></div></div>
+  <div class="image-item int"><img src="heroes/VISAGE.png" alt="Image 1"><div class="hover-content">
+  <img src="logo/int2.png" alt="Hover Image"><p>VISAGE</p></div></div>
+  <div class="image-item int"><img src="heroes/VOID_SPIRIT.png" alt="Image 1"><div class="hover-content">
+  <img src="logo/int2.png" alt="Hover Image"><p>VOID SPIRIT</p></div></div>
+  <div class="image-item int"><img src="heroes/WARLOCK.png" alt="Image 1"><div class="hover-content">
+  <img src="logo/int2.png" alt="Hover Image"><p>WARLOCK</p></div></div>
+  <div class="image-item agi"><img src="heroes/WEAVER.png" alt="Image 1"><div class="hover-content">
+  <img src="logo/agi2.png" alt="Hover Image"><p>WEAVER</p></div></div>
+  <div class="image-item int"><img src="heroes/WINDRUNNER.png" alt="Image 1"><div class="hover-content">
+  <img src="logo/int2.png" alt="Hover Image"><p>WINDRANGER</p></div></div>
+  <div class="image-item int"><img src="heroes/WINTER_WYVERN.png" alt="Image 1"><div class="hover-content">
+  <img src="logo/int2.png" alt="Hover Image"><H1>WINTER<BR>WYVERN</H1></div></div>
+  <div class="image-item int"><img src="heroes/WITCH_DOCTOR.png" alt="Image 1"><div class="hover-content">
+  <img src="logo/int2.png" alt="Hover Image"><p>WITCH DOCTOR</p></div></div>
+  <div class="image-item str"><img src="heroes/SKELETON_KING.png" alt="Image 1"><div class="hover-content">
+  <img src="logo/str2.png" alt="Hover Image"><p>WRAITH KING</p></div></div>
+  <div class="image-item int"><img src="heroes/ZUUS.png" alt="Image 1"><div class="hover-content">
+  <img src="logo/int2.png" alt="Hover Image"><p>ZUES</p></div></div>
+</div>
+ 	
+<!-- Page content -->
+<div class="w3-content" style="max-width:1300px;">
+
+  <!-- Good offers -->
+  <br><br><br>
+  <div class="w3-container w3-margin-top">
+    <h1 style="text-align:center;">THE MAP</h1>
+    <img src="dotamap.webp" style="width:30%; float:right;">
+    <p>The Map is the playing field for all Dota 2 matches. It is comprised of two sides, one for the Radiant faction, and one for the 
+    Dire faction. To win, players must destroy the opposing side's Ancient, an important building at the center of each team's base. The map 
+    is represented in the interface by the minimap.</p>
+    <h3 style="text-align:center;">Lanes</h3>
+    <p>The map is segmented into three different lanes, the top, the bottom, and the middle lane. Each one of these lanes leads to the other team's base, 
+    guarded by towers along the way. During the early laning phase of the game, most gameplay is centered around the lanes.The bottom lane for the Radiant 
+    Radiant, and the top lane for the Dire, are considered safe lanes. Creeps meet each other close to the towers, which provide greater 
+    protection from enemies. These lanes are recommended for beginners, as they provide some added protection against ganking.</p>
+    <H3 style="text-align:center;">River</h3>
+    <p>The River separates the two factional sides of the map. It is surrounded by high ground, which blocks players' vision on both sides. The river 
+    interacts with 2 spells in the game  Water Regen (heals 10 HP per second and restores 5 mana per second while in the river) and Guardian Sprint 
+    (amplifies movement speed bonus while in the river and, if upgraded, provides a status resistance bonus).
+    <h3 style="text-align:center;">Jungle</h3>
+    <p>The Jungle refers to the forested area between lanes. This is where neutral creeps can be found, which can be killed for gold and experience. 
+    It is possible to level up by killing creeps in the jungle instead of in the lanes. This practice is called Jungling.</p>
+    <h3 style="text-align:center;">Towers</h3>
+<p>Each faction has defensive towers placed along the lanes leading to the Ancient. Towers deal single target damage to heroes and creeps. 
+In the early stages of the game, a hero can only take a few hits from a tower before dying, so one must be careful as to not get too close to 
+towers until they have gained enough strength. Towers have True Sight, and can detect invisible enemies.</p>
+<h3 style="text-align:center;">Barracks</h3>
+<p>Each base has three pairs of barracks, placed behind towers. One is for melee creeps, and one is for ranged creeps. If the barracks is destroyed, 
+the opposing team's creeps will become stronger. If all 6 barracks are destroyed, all opposing creeps will gain an even larger power-up, which makes 
+them very difficult to defend against. These mega creeps can usually assure victory because of their high health, damage and numbers, and can kill a 
+Hero quickly if they are reckless enough.</p>
+
+<h3 style="text-align:center;">Outposts</h3>
+<p>Outposts are indestructible passive buildings that grant experience in a fixed time interval. Enemy heroes can right-click an Outpost in order 
+to conquer it after at least one of their enemies tier two tower has fallen, denying experience to their enemies. The Outposts are located within 
+the primary jungles of both teams, close to their safelanes between the tier 1 and tier 2 towers. Outposts grant vision and True Sight to the team 
+they belong to, in an area around them.</p>
+
+<h3 style="text-align:center;">Effigies</h3>
+<p>Each base has 7 Effigy Buildings which can block enemy creeps before reaching the tier 4 towers or the Ancient. Five of the seven Effigy buildings 
+are customizable with Effigy.</p>
+
+<h3 style="text-align:center;">Ancient</h3>
+<p>This is the main building in both bases. If one team destroys the other team's Ancient, the game is over and the destroying team has won. This building
+ does not attack and will slowly regenerate health over time. It is defended by two towers and cannot be attacked until those towers are destroyed.</p>
+  <br><br><br><br><br><br>
+</div>
+  
+<div class="w3-content" style="max-width:1300px;">
+    	<h1 style="text-align:center;">Dota 2 Major 2023</h1>
+	<img src="dotamajor.jpg" style="width:100%">
+	<p>The stage is set for all four teams — though exact placements needed some figuring out through tiebreakers, with Xtreme Gaming and Invictus Gaming coming out on top.
+
+Xtreme, featuring one of China’s midlaner superstars Zhang “Paparazi灬” Chengjun, will finally make it to a DPC Major after yet more roster changes.
+
+IG, whose last Major appearance came in 2021, will return to a DPC LAN after two years.
+
+Meanwhile, both PSG.LGD and Team Aster remains consistently in the mix, and will grab another chance to represent their region.</p>
+	<p>Western Europe continues to be a bloodbath.
+
+Even after the last DPC series, five teams in Western Europe still have fate in their hands.
+
+Team Liquid claims another first place in the League, while Major winners Gaimin Gladiators will look to secure more DPC points against The International 11 winners Tundra Esports.
+
+OG and Ooredoo Thunder — both with losing 3-4 records — battled for the right to Major qualification. Ooredoo has been the surprise of the region, springing defeats onto three of the four Lima Major participants coming. But it was OG that came out ahead, claiming the fourth and final spot in Berlin.</p>
+	<p>Talon Esports came off an unexpected third-place finish at the Lima Major and continued into the DPC in blazing form. In a region that is usually too tight to call, they remain undefeated as of the time of writing, with a good chance to claim a 7-0 record against a Geek Slate team pegged for relegation.
+
+Team SMG is the newcomer here, and will attend a Major for the first time in organization history. The team played Execration in a tiebreaker to finalize their positions, but both will be happy to make it out of a competitive region.</p>
+	<p>Eastern Europe has come up with a surprise — HellRaisers, led by veteran captain Alexey “Solo” Berezin, compiled an undefeated record to finish first in the DPC.
+
+Team Spirit and BetBoom Team will look to improve on their Lima Major appearances, where both teams performed below expectations.</p>
+	<p>Was there very truly any doubt?
+
+TSM, Shopify Rebellion, beastcoast and Evil Geniuses continue to dominate their respective regions. Both 1st-placed squads went undefeated through their region, with the runners-up only losing to the eventual champions.</p>
+<!-- End page content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-container w3-center w3-opacity w3-margin-bottom">
+  <h5>Find Us On</h5>
+  <div class="w3-xlarge w3-padding-16">
+    <a href="https://www.valvesoftware.com/en/about"><img src="logo/valve.png"></a>
+    <a href="file:///C:/Users/keiji/Desktop/template2/dota.html#"><img src="logo/dota.png" style="width:200px;"></a>
+  </div>
+</footer>
+
+<script>
+const filterButtons = document.querySelectorAll(".filter-buttons button");
+const galleryItems = document.querySelectorAll(".image-item");
+
+filterButtons.forEach((button) => {
+  button.addEventListener("click", () => {
+    const filter = button.getAttribute("data-filter");
+    const isActive = button.classList.contains("active"); // Check if button is active
+
+    // Remove active class from all buttons
+    filterButtons.forEach((button) => {
+      button.classList.remove("active");
+    });
+
+    // Toggle active class on clicked button
+    if (!isActive) {
+      button.classList.add("active");
+    }
+
+    galleryItems.forEach((item) => {
+      if (filter === "all" || item.classList.contains(filter)) {
+        item.style.display = "block";
+      } else {
+        item.style.display = "none";
+      }
+    });
+  });
+});
+
+function openLink(evt, linkName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("myLink");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
+  }
+  document.getElementById(linkName).style.display = "block";
+  evt.currentTarget.className += " w3-red";
+}
+
+document.getElementsByClassName("tablink")[0].click();
+</script>
+
+</body>
+</html>
