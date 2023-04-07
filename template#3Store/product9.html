@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Product Details | My Shopping Website</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: 'Montserrat', sans-serif;
+      }
+    header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline-block;
+    margin: 0 10px;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  main {
+    padding: 20px;
+  }
+  
+  .container {
+    max-width: 960px;
+    margin: 0 auto;
+  }
+  
+  h2 {
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  .product-details {
+    margin-top: 50px;
+    border-style: solid;
+  }
+  
+  .product-details img {
+    display: block;
+    margin: 0 auto;
+    max-width: 500px;
+  }
+  
+  .product-details h3 {
+    text-align: center;
+    margin-top: 10px;
+    margin-left: 20px;
+  }
+  
+  .product-details p {
+    text-align: center;
+    margin-top: 10px;
+    margin-left: 20px;
+    font-size: 15px;
+  }
+  
+  form {
+    text-align: center;
+    margin-bottom: -17px;
+  }
+  
+  label {
+    font-size: 18px;
+    font-weight: bold;
+    margin-right: 10px;
+  }
+  
+  select {
+    font-size: 18px;
+    padding: 5px;
+    margin-right: 10px;
+  }
+  
+  button {
+    background-color: #333;
+    color: #fff;
+    font-size: 18px;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #fff;
+    color: #333;
+  }
+  
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  footer p {
+    margin: 0;
+  }
+  
+</style>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h1>Welcome to My Shopping Website</h1><br><br>
+        <nav>
+          <ul>
+            <li><a href="shopping.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <h2>Product Details</h2>
+        <section class="product-details">
+ 	  <h3 style="text-align:left; line-height: 1.8; margin-bottom: -15px;">Nike Air Max 1/97</h3>
+          <p style="text-align:left; line-height: 1.8">Sean Wotherspoon</p>
+          <img src="product/sean.webp" style="float:left; border-top:5px solid #000;" alt="Product 1">
+          <form  style="border-top:5px solid #000;">
+	    <br><br><br><h4>Select Size:</h4>
+            <label for="size">Size:</label>
+            <select id="size" name="size">
+              <option value="6">6</option>
+              <option value="6.5">6.5</option>
+              <option value="7">7</option>
+              <option value="7.5">7.5</option>
+              <option value="8">8</option>
+              <option value="8.5">8.5</option>
+              <option value="9">9</option>
+              <option value="9.5">9.5</option>
+              <option value="10">10</option>
+              <option value="10.5">10.5</option>
+              <option value="11">11</option>
+              <option value="11.5">11.5</option>
+              <option value="12">12</option>
+            </select>
+          </form>
+          <h4 style="text-align:center">Price: $150</h4>
+          <button style="display: block; margin: 0 auto;" onclick="purchase()">Purchase</button><br><br><br><br><br>
+        </section><br><br><br><br><br>
+      </div>
+    </main>
+    <footer>
+      <div class="container">
+        <p>&copy; 2023 My Shopping Website</p>
+      </div>
+    </footer>
+  <script>
+function purchase() {
+  alert("Thank you for your purchase! Your order has been received and will be processed shortly.");
+}
+</script>
+  </body>
+</html>
