@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Instatime</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: #fafafa;
+      font-family: Arial, sans-serif;
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1rem;
+      background-color: white;
+      border-bottom: 1px solid #dbdbdb;
+    }
+
+    .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      color: #262626;
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+    }
+
+    .nav-link {
+      margin-left: 1.5rem;
+      color: #262626;
+      font-weight: bold;
+      text-decoration: none;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      transition: color 0.2s ease-in-out;
+    }
+
+    .nav-link:hover {
+      color: #8e8e8e;
+    }
+
+    .user {
+      display: flex;
+      align-items: center;
+    }
+
+    .user img {
+      height: 2rem;
+      width: 2rem;
+      border-radius: 50%;
+      margin-right: 1rem;
+    }
+
+    .user-name {
+      font-weight: bold;
+      color: #262626;
+    }
+
+    main {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding-top: 2rem;
+    }
+
+    .post {
+      width: calc(33.33% - 1rem);
+      margin-bottom: 2rem;
+      border: 1px solid #dbdbdb;
+      background-color: white;
+      box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+    }
+
+    .post img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .post .post-details {
+      padding: 1rem;
+    }
+
+    .post .post-details .user-info {
+      display: flex;
+      align-items: center;
+      margin-bottom: 1rem;
+    }
+
+    .post .post-details .user-info img {
+      height: 2rem;
+      width: 2rem;
+      border-radius: 50%;
+      margin-right: 1rem;
+    }
+
+    .post .post-details .user-info .user-name {
+      font-weight: bold;
+      color: #262626;
+    }
+
+    .post .post-details .post-actions {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 1rem;
+    }
+
+    .post .post-details .post-actions .action {
+      display: flex;
+      align-items: center;
+      color: #262626;
+      font-size: 0.8rem;
+      cursor: pointer;
+      transition: color 0.2s ease-in-out;
+    }
+
+    .post .post-details .post-actions .action:hover {
+      color: #8e8e8e;
+    }
+
+     .post .post-details .post-actions .action i {
+  font-size: 1.2rem;
+  margin-right: 0.5rem;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .post {
+    margin: 10px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid gray;
+    box-shadow: 2px 2px
+2px lightgray;
+}
+.post img {
+width: 100%;
+height: auto;
+}
+.post-details {
+padding: 10px;
+}
+.user-info {
+display: flex;
+align-items: center;
+margin-bottom: 10px;
+}
+.user-info img {
+width: 40px;
+height: 40px;
+border-radius: 50%;
+margin-right: 10px;
+}
+.user-name {
+font-weight: bold;
+}
+.post-actions {
+display: flex;
+justify-content: space-between;
+font-size: 0.8rem;
+color: gray;
+}
+.action {
+display: flex;
+align-items: center;
+}
+.action i {
+margin-right: 5px;
+}
+
+footer {
+  background-color: white;
+  padding: 1rem;
+  text-align: center;
+  border-top: 1px solid #dbdbdb;
+}
+
+footer p {
+  font-size: 0.8rem;
+  color: #8e8e8e;
+}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">Instagram</div>
+    <nav>
+      <a href="#" class="nav-link">Home</a>
+      <a href="#" class="nav-link">Explore</a>
+      <a href="#" class="nav-link">Notifications</a>
+      <a href="#" class="nav-link">Profile</a>
+    </nav>
+    <div class="user">
+      <img src="profile.jpg" alt="Profile Picture">
+      <div class="user-name">Flame</div>
+    </div>
+  </header>
+  <main>
+  <div class="post">
+    <img src="pic1.jpg" alt="Post 1">
+    <div class="post-details">
+      <div class="user-info">
+        <img src="profile1.jpg" alt="Profile Picture">
+        <div class="user-name">Finn</div>
+      </div>
+      <div class="post-actions">
+        <div class="action"><i class="far fa-heart"></i> 25 likes</div>
+        <div class="action"><i class="far fa-comment"></i> 4 comments</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="post">
+    <img src="pic2.jpg" alt="Post 2">
+    <div class="post-details">
+      <div class="user-info">
+        <img src="profile2.png" alt="Profile Picture">
+        <div class="user-name">Bubblegum</div>
+      </div>
+      <div class="post-actions">
+        <div class="action"><i class="far fa-heart"></i> 10 likes</div>
+        <div class="action"><i class="far fa-comment"></i> 2 comments</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="post">
+    <img src="pic3.jpg" alt="Post 3">
+    <div class="post-details">
+      <div class="user-info">
+        <img src="profile3.jpg" alt="Profile Picture">
+        <div class="user-name">Marceline</div>
+      </div>
+      <div class="post-actions">
+        <div class="action"><i class="far fa-heart"></i> 50 likes</div>
+        <div class="action"><i class="far fa-comment"></i> 8 comments</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="post">
+    <img src="pic4.jpg" alt="Post 4">
+    <div class="post-details">
+      <div class="user-info">
+        <img src="profile4.jpg" alt="Profile Picture">
+        <div class="user-name">BMO</div>
+      </div>
+      <div class="post-actions">
+        <div class="action"><i class="far fa-heart"></i> 15 likes</div>
+        <div class="action"><i class="far fa-comment"></i> 3 comments</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="post">
+    <img src="pic5.jpg" alt="Post 4">
+    <div class="post-details">
+      <div class="user-info">
+        <img src="profile5.jpg" alt="Profile Picture">
+        <div class="user-name">Jake</div>
+      </div>
+      <div class="post-actions">
+        <div class="action"><i class="far fa-heart"></i> 15 likes</div>
+        <div class="action"><i class="far fa-comment"></i> 3 comments</div>
+      </div>
+    </div>
+  </div>
+</main>
+<footer>
+  <nav>
+    <a href="#" class="nav-link">About</a>
+    <a href="#" class="nav-link">Blog</a>
+    <a href="#" class="nav-link">Jobs</a>
+    <a href="#" class="nav-link">Help</a>
+    <a href="#" class="nav-link">API</a>
+    <a href="#" class="nav-link">Privacy</a>
+    <a href="#" class="nav-link">Terms</a>
+    <a href="#" class="nav-link">Top Accounts</a>
+    <a href="#" class="nav-link">Hashtags</a>
+    <a href="#" class="nav-link">Locations</a>
+  </nav>
+  <p>&copy; 2023 Instatime</p>
+</footer>
+  </body>
+</html>
