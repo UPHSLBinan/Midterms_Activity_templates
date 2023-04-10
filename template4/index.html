@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Karma", sans-serif}
+.w3-bar-block .w3-bar-item {padding:20px}
+</style>
+</head>
+<body>
+
+<!-- Sidebar (hidden by default) -->
+<nav class="w3-sidebar w3-bar-block w3-card w3-top w3-xlarge w3-animate-left" style="display:none;z-index:2;width:40%;min-width:300px" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()"
+  class="w3-bar-item w3-button">Close Menu</a>
+  <a href="#food" onclick="w3_close()" class="w3-bar-item w3-button">Games</a>
+  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">Hot</a>
+</nav>
+
+<!-- Top menu -->
+<div class="w3-top">
+  <div class="w3-white w3-xlarge" style="max-width:1200px;margin:auto">
+    <div class="w3-button w3-padding-16 w3-left" onclick="w3_open()">☰</div>
+    <div class="w3-right w3-padding-16">Mail</div>
+    <div class="w3-center w3-padding-16">RPG</div>
+  </div>
+</div>
+  
+<!-- !PAGE CONTENT! -->
+<div class="w3-main w3-content w3-padding" style="max-width:1200px;margin-top:100px">
+
+  <!-- First Photo Grid-->
+  <div class="w3-row-padding w3-padding-16 w3-center" id="food">
+    <div class="w3-quarter">
+      <img src="img4/cp.jpg" alt="Cyberpunk" style="width:100%">
+      <h3>Cyberpunk 2077</h3>
+      <p>Cyberpunk 2077 is an open-world, action-adventure RPG set in the megalopolis of Night City, where you play as a cyberpunk mercenary wrapped up in a do-or-die fight for survival. Improved and featuring all-new free additional content, customize your character and playstyle as you take on jobs, build a reputation, and unlock upgrades. The relationships you forge and the choices you make will shape the story and the world around you. Legends are made here. What will yours be?</p>
+    </div>
+    <div class="w3-quarter">
+      <img src="img4/eldenring.jpg" alt="Steak" style="width:100%">
+      <h3>Elden ring</h3>
+      <p>THE NEW FANTASY ACTION RPG.
+Rise, Tarnished, and be guided by grace to brandish the power of the Elden Ring and become an Elden Lord in the Lands Between.</p>
+    </div>
+    <div class="w3-quarter">
+      <img src="img4/got.jpg" alt="Ghost of Tsushima" style="width:100%">
+      <h3>Ghost of Tsushima</h3>
+      <p>The year is 1274. Samurai warriors are the legendary defenders of Japan—until the fearsome Mongol Empire invades the island of Tsushima, wreaking havoc and conquering the local population. As one of the last surviving samurai, you rise from the ashes to fight back. But honorable tactics won’t lead you to victory. You must move beyond your samurai traditions to forge a new way of fighting—the way of the Ghost—as you wage an unconventional war for the freedom of Japan.</p>
+    </div>
+    <div class="w3-quarter">
+      <img src="img4/ff7.jpg" alt="Final Fantasy" style="width:100%">
+      <h3>Final Fantasy 7 Remake</h3>
+      <p>FINAL FANTASY VII REMAKE is a bold reimagining of the original FINAL FANTASY VII, originally released in 1997, developed under the guidance of the original key developers.
+This critically-acclaimed game, which mixes traditional command-based combat and real-time action, makes its Steam debut along with FF7R EPISODE INTERmission─a new story arc featuring Yuffie Kisaragi.</p>
+    </div>
+  </div>
+  
+  <!-- Second Photo Grid-->
+  <div class="w3-row-padding w3-padding-16 w3-center">
+    <div class="w3-quarter">
+      <img src="img4/ykz0.jpg" alt="Yakuza" style="width:100%">
+      <h3>Yakuza 0</h3>
+      <p>Fight like hell through Tokyo and Osaka with protagonist Kazuma Kiryu and series regular Goro Majima. Play as Kazuma Kiryu and discover how he finds himself in a world of trouble when a simple debt collection goes wrong and his mark winds up murdered. Then, step into the silver-toed shoes of Goro Majima and explore his “normal” life as the proprietor of a cabaret club.</p>
+    </div>
+    <div class="w3-quarter">
+      <img src="img4/witcher.jpg" alt="Salmon" style="width:100%">
+      <h3>The Witcher 3</h3>
+      <p>You are Geralt of Rivia, mercenary monster slayer. Before you stands a war-torn, monster-infested continent you can explore at will. Your current contract? Tracking down Ciri — the Child of Prophecy, a living weapon that can alter the shape of the world.</p>
+    </div>
+    <div class="w3-quarter">
+      <img src="img4/sekiro.jpg" alt="Sandwich" style="width:100%">
+      <h3>Sekiro</h3>
+      <p>n Sekiro™: Shadows Die Twice you are the 'one-armed wolf', a disgraced and disfigured warrior rescued from the brink of death. Bound to protect a young lord who is the descendant of an ancient bloodline, you become the target of many vicious enemies, including the dangerous Ashina clan. When the young lord is captured, nothing will stop you on a perilous quest to regain your honor, not even death itself.</p>
+    </div>
+    <div class="w3-quarter">
+      <img src="img4/mh.jpg" alt="Croissant" style="width:100%">
+      <h3>Monster Hunter World</h3>
+      <p>Welcome to a new world! Take on the role of a hunter and slay ferocious monsters in a living, breathing ecosystem where you can use the landscape and its diverse inhabitants to get the upper hand. Hunt alone or in co-op with up to three other players, and use materials collected from fallen foes to craft new gear and take on even bigger, badder beasts!</p>
+    </div>
+  </div>
+
+  <!-- Pagination -->
+  <div class="w3-center w3-padding-32">
+    <div class="w3-bar">
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">«</a>
+      <a href="#" class="w3-bar-item w3-black w3-button">1</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">2</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">3</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">4</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">»</a>
+    </div>
+  </div>
+  
+  <hr id="about">
+
+  <!-- About Section -->
+  <div class="w3-container w3-padding-32 w3-center">  
+    <h3>Top Sellers&nbsp;</h3>
+    <br>
+    <img src="img4/eld.jpg" alt="Me" class="w3-image" style="display:block;margin:auto" width="800" height="533">
+    <div class="w3-padding-32">
+      <h4><b>Elden Ring&nbsp;</b></h4>
+      <h6><i>With Passion For Real, Good Food</i></h6>
+      <p>A vast world where open fields with a variety of situations and huge dungeons with complex and three-dimensional designs are seamlessly connected. As you explore, the joy of discovering unknown and overwhelming threats await you, leading to a high sense of accomplishment.&nbsp;In addition to customizing the appearance of your character, you can freely combine the weapons, armor, and magic that you equip. You can develop your character according to your play style, such as increasing your muscle strength to become a strong warrior, or mastering magic.&nbsp;A multilayered story told in fragments. An epic drama in which the various thoughts of the characters intersect in the Lands Between.</p>
+		<h3>Reviews</h3>
+		<p>“Put a ring on it.”
+10/10 – IGN<br>
+
+“An unmissable open-world masterpiece.”
+10/10 – Gaming Bible<br>
+
+“Exploration is jaw dropping.”
+5/5 – Games Radar</p>
+    </div>
+  </div>
+  <hr>
+  
+  <!-- Footer -->
+  <footer class="w3-row-padding w3-padding-32">
+    <div class="w3-third">
+      <h3>Valve</h3>
+      <p>© 2023 Valve Corporation. All rights reserved. All trademarks are property of their respective owners in the US and other countries. VAT included in all prices where applicable.</p>
+    </div>
+  
+    <div class="w3-third">
+      <h3>Recomendation</h3>
+      <ul class="w3-ul w3-hoverable">
+        <li class="w3-padding-16">
+          <img src="img4/sw.png" class="w3-left w3-margin-right" style="width:50px">
+          <span class="w3-large">Star Wars</span><br>
+          <span>Knights of the Old Republic</span>
+        </li>
+        <li class="w3-padding-16">
+          <img src="img4/skyrim.png" class="w3-left w3-margin-right" style="width:50px">
+          <span class="w3-large">The Elder Scrolls V</span><br>
+          <span>Skyrim&nbsp;</span>
+        </li> 
+      </ul>
+    </div>
+
+    <div class="w3-third w3-serif">
+      <h3>POPULAR TAGS</h3>
+      <p>
+        <span class="w3-tag w3-black w3-margin-bottom">Action</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Strategy</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Simulation</span>
+        <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Sports</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Racing</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Adventure</span>
+        <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Co-op</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Horror</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Open World</span>
+        <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Multiplayer</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Singleplayer</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Survival</span>
+        <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Adult Only</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Horror</span>
+      </p>
+    </div>
+  </footer>
+
+<!-- End page content -->
+</div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+</script>
+
+</body>
+</html>
